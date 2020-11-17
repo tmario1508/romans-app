@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Romanis-FrontEnd';
+
+  rol_usuario = 'USER';
+  rol_admin = 'ADMIN';
+
 }
+
+

@@ -10,6 +10,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { ConocenosComponent } from './pages/conocenos/conocenos.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { PerfilComponent } from './pages/usuario/perfil/perfil.component';
+import { ProductosComponent } from './pages/admin/productos/productos.component';
+import { EmpleadosComponent } from './pages/admin/empleados/empleados.component';
+import { PedidosComponent } from './pages/admin/pedidos/pedidos.component';
+import { FooterComponent } from './components/navigation/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { PerfilComponent } from './pages/usuario/perfil/perfil.component';
     LoginComponent,
     ConocenosComponent,
     CarritoComponent,
-    PerfilComponent
+    PerfilComponent,
+    ProductosComponent,
+    EmpleadosComponent,
+    PedidosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
