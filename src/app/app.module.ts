@@ -14,6 +14,15 @@ import { ProductosComponent } from './pages/admin/productos/productos.component'
 import { EmpleadosComponent } from './pages/admin/empleados/empleados.component';
 import { PedidosComponent } from './pages/admin/pedidos/pedidos.component';
 import { FooterComponent } from './components/navigation/footer/footer.component';
+import { DetallePedidoComponent } from './pages/admin/detalle-pedido/detalle-pedido.component';
+import { DetalleEmpleadoComponent } from './pages/admin/detalle-empleado/detalle-empleado.component';
+import { DetalleProductoComponent } from './pages/admin/detalle-producto/detalle-producto.component';
+import { ActualizarPerfilComponent } from './pages/admin/actualizar-perfil/actualizar-perfil.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { CategorybarComponent } from './components/navigation/categorybar/categorybar.component';
+import { RegistroEmpleadoComponent } from './pages/admin/registro-empleado/registro-empleado.component';
+import { RegistroProductoComponent } from './pages/admin/registro-producto/registro-producto.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +37,16 @@ import { FooterComponent } from './components/navigation/footer/footer.component
     ProductosComponent,
     EmpleadosComponent,
     PedidosComponent,
-    FooterComponent
+    FooterComponent,
+    DetallePedidoComponent,
+    DetalleEmpleadoComponent,
+    DetalleProductoComponent,
+    ActualizarPerfilComponent,
+    PageNotFoundComponent,
+    RegistroComponent,
+    CategorybarComponent,
+    RegistroEmpleadoComponent,
+    RegistroProductoComponent
   ],
   imports: [
     BrowserModule,
