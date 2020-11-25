@@ -12,12 +12,12 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
 import { PerfilComponent } from './pages/usuario/perfil/perfil.component';
 import { ProductosComponent } from './pages/admin/productos/productos.component';
 import { EmpleadosComponent } from './pages/admin/empleados/empleados.component';
-import { PedidosComponent } from './pages/admin/pedidos/pedidos.component';
+import { PedidosComponent } from './pages/usuario/pedidos/pedidos.component';
 import { FooterComponent } from './components/navigation/footer/footer.component';
 import { DetallePedidoComponent } from './pages/admin/detalle-pedido/detalle-pedido.component';
 import { DetalleEmpleadoComponent } from './pages/admin/detalle-empleado/detalle-empleado.component';
 import { DetalleProductoComponent } from './pages/admin/detalle-producto/detalle-producto.component';
-import { ActualizarPerfilComponent } from './pages/admin/actualizar-perfil/actualizar-perfil.component';
+import { ActualizarPerfilComponent } from './pages/usuario/actualizar-perfil/actualizar-perfil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { CategorybarComponent } from './components/navigation/categorybar/categorybar.component';
@@ -26,7 +26,6 @@ import { RegistroProductoComponent } from './pages/admin/registro-producto/regis
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActualizarProductoComponent } from './pages/admin/actualizar-producto/actualizar-producto.component';
 import { ActualizarEmpleadoComponent } from './pages/admin/actualizar-empleado/actualizar-empleado.component';
-import { AdminPerfilComponent } from './pages/admin/admin-perfil/admin-perfil.component';
 
 @NgModule({
   declarations: [
@@ -52,8 +51,7 @@ import { AdminPerfilComponent } from './pages/admin/admin-perfil/admin-perfil.co
     RegistroEmpleadoComponent,
     RegistroProductoComponent,
     ActualizarProductoComponent,
-    ActualizarEmpleadoComponent,
-    AdminPerfilComponent
+    ActualizarEmpleadoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { ActualizarEmpleadoComponent } from './pages/admin/actualizar-empleado/actualizar-empleado.component';
-import { ActualizarPerfilComponent } from './pages/admin/actualizar-perfil/actualizar-perfil.component';
+import { ActualizarPerfilComponent } from './pages/usuario/actualizar-perfil/actualizar-perfil.component';
 import { ActualizarProductoComponent } from './pages/admin/actualizar-producto/actualizar-producto.component';
 import { DetalleEmpleadoComponent } from './pages/admin/detalle-empleado/detalle-empleado.component';
 import { DetallePedidoComponent } from './pages/admin/detalle-pedido/detalle-pedido.component';
@@ -23,7 +24,7 @@ import { PedidosComponent } from './pages/usuario/pedidos/pedidos.component';
 const routes:Routes = [
 
   /*ADMIN*/
-  {path:'admin/actualizar-perfil',component: ActualizarPerfilComponent},
+
   {path:'admin/detalle-empleado',component: DetalleEmpleadoComponent},
   {path:'admin/detalle-producto',component: DetalleProductoComponent},
   {path:'admin/empleados',component: EmpleadosComponent},
@@ -35,6 +36,7 @@ const routes:Routes = [
 
   /*USUARIO*/
   {path:'perfil',component: PerfilComponent},
+  {path:'actualizar-perfil',component: ActualizarPerfilComponent},
   {path:'pedidos',component: PedidosComponent},
   {path:'detalle/pedidos',component: DetallePedidoComponent},
   {path:'actualizar-perfil',component: ActualizarPerfilComponent},
