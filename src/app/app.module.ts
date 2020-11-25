@@ -23,6 +23,10 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { CategorybarComponent } from './components/navigation/categorybar/categorybar.component';
 import { RegistroEmpleadoComponent } from './pages/admin/registro-empleado/registro-empleado.component';
 import { RegistroProductoComponent } from './pages/admin/registro-producto/registro-producto.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ActualizarProductoComponent } from './pages/admin/actualizar-producto/actualizar-producto.component';
+import { ActualizarEmpleadoComponent } from './pages/admin/actualizar-empleado/actualizar-empleado.component';
+import { AdminPerfilComponent } from './pages/admin/admin-perfil/admin-perfil.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +50,15 @@ import { RegistroProductoComponent } from './pages/admin/registro-producto/regis
     RegistroComponent,
     CategorybarComponent,
     RegistroEmpleadoComponent,
-    RegistroProductoComponent
+    RegistroProductoComponent,
+    ActualizarProductoComponent,
+    ActualizarEmpleadoComponent,
+    AdminPerfilComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

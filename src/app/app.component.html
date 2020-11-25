@@ -1,12 +1,19 @@
+<div id="content-wrapper" class="d-flex flex-column">
+  <!-- Main Content -->
+  <div id="content">
+    <!-- Topbar -->
+    <app-topbar></app-topbar>
+    <!-- /topbar -->
 
-<div *ngIf = "rol_usuario == 'ADMIN'">
-  <h1>CONTENIDO ADMIN</h1>
-</div>
+    <!-- Begin Content -->
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- /Begin Content -->
+  </div>
+  <!-- /Main Content -->
 
-<div *ngIf = "rol_usuario == 'USER'">
-  <h1>CONTENIDO USUARIO</h1>
-  <p>blblba</p>
-  <p *ngIf = "rol_usuario == 'ADMIN'">CODIGO ASFAFASAFAS</p>
-</div>
-
-<router-outlet></router-outlet>
+  <!-- Footer -->
+  <app-footer></app-footer>
+  <!-- /Footer -->
+  </div>
