@@ -5,7 +5,7 @@ import { ActualizarEmpleadoComponent } from './pages/admin/actualizar-empleado/a
 import { ActualizarPerfilComponent } from './pages/usuario/actualizar-perfil/actualizar-perfil.component';
 import { ActualizarProductoComponent } from './pages/admin/actualizar-producto/actualizar-producto.component';
 import { DetalleEmpleadoComponent } from './pages/admin/detalle-empleado/detalle-empleado.component';
-import { DetallePedidoComponent } from './pages/admin/detalle-pedido/detalle-pedido.component';
+import { DetallePedidoComponent } from './pages/usuario/detalle-pedido/detalle-pedido.component';
 import { DetalleProductoComponent } from './pages/admin/detalle-producto/detalle-producto.component';
 import { EmpleadosComponent } from './pages/admin/empleados/empleados.component';
 import { ProductosComponent } from './pages/admin/productos/productos.component';
@@ -24,7 +24,6 @@ import { PedidosComponent } from './pages/usuario/pedidos/pedidos.component';
 const routes:Routes = [
 
   /*ADMIN*/
-
   {path:'admin/detalle-empleado',component: DetalleEmpleadoComponent},
   {path:'admin/detalle-producto',component: DetalleProductoComponent},
   {path:'admin/empleados',component: EmpleadosComponent},
@@ -38,8 +37,7 @@ const routes:Routes = [
   {path:'perfil',component: PerfilComponent},
   {path:'actualizar-perfil',component: ActualizarPerfilComponent},
   {path:'pedidos',component: PedidosComponent},
-  {path:'detalle/pedidos',component: DetallePedidoComponent},
-  {path:'actualizar-perfil',component: ActualizarPerfilComponent},
+  {path:'detalle/pedido',component: DetallePedidoComponent},
 
   /*PAGINA*/
   {path:'home',component: HomeComponent},

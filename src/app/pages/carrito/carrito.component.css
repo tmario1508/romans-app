@@ -1,0 +1,107 @@
+.contenedor{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.nota{
+  background-color: gainsboro;
+  width: 100%;
+}
+
+.pedido-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.compra-row{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.compra-row:hover{
+  cursor: pointer;
+  background-color: green;
+}
+
+.short{
+  margin: 5px;
+}
+
+.producto-row{
+  color: white;
+}
+
+.hr-rojo{
+  color: red;
+  border-width: 2px;
+  border-color: red;
+}
+
+.hr-blanco{
+  color: white;
+  border-width: 1px;
+  border-color: white;
+}
+
+.btn-delete{
+  border-radius: 5%;
+  justify-content:center;
+  background-color: darkkhaki;
+  color: black;
+  border-color: red;
+  border-width: 2px;
+  transition: 0.3s;
+}
+
+.btn-delete:hover{
+  background-color: green;
+  background-color: black;
+  color: red;
+}
+
+.img-car{
+  display: none;
+}
+
+.info-producto{
+  width: 100%;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: 1px;
+}
+
+.row-items{
+  color:black;
+  display:inline-flex;
+  width: 100%;
+  list-style-type: none;
+}
+
+.centrado{
+  align-self: center;
+  display: flex;
+}
+
+.centradoi{
+  align-self: center;
+}
+
+/*Resolucion de laptop*/
+@media (min-width: 768px) {
+  .nota{
+    width: 60%;
+  }
+
+  .img-car{
+    width: 30%;
+    display: block;
+  }
+
+}

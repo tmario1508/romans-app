@@ -14,7 +14,7 @@ import { ProductosComponent } from './pages/admin/productos/productos.component'
 import { EmpleadosComponent } from './pages/admin/empleados/empleados.component';
 import { PedidosComponent } from './pages/usuario/pedidos/pedidos.component';
 import { FooterComponent } from './components/navigation/footer/footer.component';
-import { DetallePedidoComponent } from './pages/admin/detalle-pedido/detalle-pedido.component';
+import { DetallePedidoComponent } from './pages/usuario/detalle-pedido/detalle-pedido.component';
 import { DetalleEmpleadoComponent } from './pages/admin/detalle-empleado/detalle-empleado.component';
 import { DetalleProductoComponent } from './pages/admin/detalle-producto/detalle-producto.component';
 import { ActualizarPerfilComponent } from './pages/usuario/actualizar-perfil/actualizar-perfil.component';
