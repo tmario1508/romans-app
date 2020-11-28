@@ -1,1 +1,136 @@
-<p>productos works!</p>
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Importacion fuentes -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="ccs/bootstrap.css">
+
+	  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="ccs/estilo.css">
+
+    <title>Sitio buuurrstrap!</title>
+  </head>
+
+	<!-- Inicio Body -->
+  <body>
+
+	  <!-- Barra de navegacion -->
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">Navbar</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			  <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+			  <a class="nav-link" href="#">Features</a>
+			  <a class="nav-link" href="#">Pricing</a>
+			  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</div>
+		  </div>
+		</nav>
+	  <!-- barra de navegacion -->
+
+
+	<h1 class="titulo">Lista de productos</h1>
+	<button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2">Crear</button>
+
+	 <!-- Seccion tabla -->
+	  <section class="container">
+		<table class="table table-bordered">
+		  <thead>
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">Nombre</th>
+			  <th scope="col">Descripciòn</th>
+			  <th scope="col">Precio</th>
+			  <th scope="col">Categoria</th>
+			  <th scope="col">Acción</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Alitas</td>
+			  <td>Alitas con salsa de tu preferencia</td>
+			  <td>$89</td>
+			  <td>2</td>
+			  <td class="text-center">
+				<button type="button" class="btn btn-outline-success">Editar</button>
+				<button type="button" class="btn btn-outline-danger">Borrar</button>
+			 </td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>Hamburguesa</td>
+			  <td>Carne de res, va acompañada de papas</td>
+			  <td>$150</td>
+			  <td>1</td>
+			  <td class="text-center">
+				<button type="button" class="btn btn-outline-success">Editar</button>
+				<button type="button" class="btn btn-outline-danger">Borrar</button>
+			 </td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td>Cerveza</td>
+			  <td>Modelo 355 ml</td>
+			  <td>$49</td>
+			  <td>3</td>
+			  <td class="text-center">
+				<button type="button" class="btn btn-outline-success">Editar</button>
+				<button type="button" class="btn btn-outline-danger">Borrar</button>
+			 </td>
+			</tr>
+			   <tr>
+			  <th scope="row">4</th>
+			  <td>Tiramisu</td>
+			  <td>Sabor limon con crema</td>
+			  <td>$67</td>
+			  <td>4</td>
+			  <td class="text-center">
+				<button type="button" class="btn btn-outline-success">Editar</button>
+				<button type="button" class="btn btn-outline-danger">Borrar</button>
+			 </td>
+			</tr>
+		  </tbody>
+		</table>
+		  <button type="button" class="btn btn-outline-primary">Crear</button>
+	</section>
+	  <!-- seccion tabla -->
+
+	  <!-- Paginacion -->
+<section class="container mt-4">
+	<div>
+	<nav aria-label="...">
+	  <ul class="pagination">
+		<li class="page-item disabled">
+		  <a class="page-link" href="#" tabindex="-1">Previous</a>
+		</li>
+		<li class="page-item"><a class="page-link" href="#">1</a></li>
+		<li class="page-item active">
+		  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="page-item"><a class="page-link" href="#">3</a></li>
+		<li class="page-item">
+		  <a class="page-link" href="#">Next</a>
+		</li>
+	  </ul>
+	</nav>
+		</div>
+</section>
+	  <!-- Paginacion -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+</html>
