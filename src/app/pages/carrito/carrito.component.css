@@ -1,11 +1,23 @@
+.titulo{
+	font-family: 'Romanesco', cursive;
+  color: #FAA402;
+  font-size: 40px;
+}
+
+.subtitulo{
+	font-family: 'Romanesco', cursive;
+  color: #FAA402;
+  font-size: 35px;
+}
+
 .contenedor{
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nota{
-  background-color: gainsboro;
+  background-color:#D6DDDF;
   width: 100%;
 }
 
@@ -27,7 +39,7 @@
 
 .compra-row:hover{
   cursor: pointer;
-  background-color: green;
+  background-color: #8592FD;
 }
 
 .short{
@@ -39,7 +51,7 @@
 }
 
 .hr-rojo{
-  color: red;
+  color:#AD1300;
   border-width: 2px;
   border-color: red;
 }
@@ -53,17 +65,16 @@
 .btn-delete{
   border-radius: 5%;
   justify-content:center;
-  background-color: darkkhaki;
+  background-color: #FAA402;
   color: black;
-  border-color: red;
+  border-color: black;
   border-width: 2px;
   transition: 0.3s;
 }
 
 .btn-delete:hover{
-  background-color: green;
-  background-color: black;
-  color: red;
+  background-color: #000000;
+  color: #AD1300;
 }
 
 .img-car{

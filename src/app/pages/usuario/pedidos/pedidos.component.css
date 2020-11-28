@@ -1,5 +1,22 @@
+.titulo{
+	font-family: 'Romanesco', cursive;
+  color: #FAA402;
+  font-size: 40px;
+}
+
 .pedido-item{
   display: flex;
+}
+
+.subtitulo{
+  font-family: 'Romanesco', cursive;
+  font-size: 30px;
+}
+
+.contenedor{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .division{
@@ -37,4 +54,11 @@
 .sin-espacios{
   margin: 0;
   padding: 0;
+}
+
+
+/*Resolucion de laptop*/
+@media (min-width: 768px) {
+
+
 }
