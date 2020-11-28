@@ -1,0 +1,19 @@
+.navbar{
+  background-color: #000000;
+  color: #FAA402;
+}
+
+.nav-item a{
+  color: #FAA402;
+  font-family: 'Romanesco', cursive;
+  font-size: 25px;
+}
+
+.dropdown-menu{
+  background-color: #000000;
+  color: #FAA402;
+}
+
+.dropdown-item:hover{
+  background-color:#AD1300;
+}

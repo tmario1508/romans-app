@@ -12,12 +12,13 @@
 
 .contenedor{
   width: 100%;
+  height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .nota{
-  background-color:#D6DDDF;
+  background-color:whitesmoke;
   width: 100%;
 }
 
@@ -27,6 +28,7 @@
   width: 100%;
   text-align: center;
   font-size: 13px;
+  background-color: #000000;
 }
 
 .compra-row{
@@ -85,7 +87,6 @@
   width: 100%;
   justify-content: space-around;
   text-align: left;
-  margin-left: 1px;
 }
 
 .row-items{
