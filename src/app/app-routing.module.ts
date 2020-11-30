@@ -45,7 +45,7 @@ const routes:Routes = [
   {path:'carrito',component: CarritoComponent},
   {path:'login',component: LoginComponent},
   {path:'registro',component: RegistroComponent},
-  {path:'menu',component: MenuComponent},
+  {path:'menu/:categoria',component: MenuComponent},
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'**', component: PageNotFoundComponent}
 ];

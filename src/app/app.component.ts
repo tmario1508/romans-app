@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Romanis-FrontEnd';
 
+  title = 'Romanis-FrontEnd';
   rol_usuario = 'USER';
   rol_admin = 'ADMIN';
+
+  constructor(){
+
+  }
+
 
 }
 
