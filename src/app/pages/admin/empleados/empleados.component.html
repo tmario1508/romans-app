@@ -1,75 +1,88 @@
-<div class="contenedor container-fluid">
-<h1 class="titulo">Lista de empleados</h1>
-	<button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2">Crear</button>
+<div class="contenedor container-fluid bg-romanisProd">
+  <body class="bg-romanisProd">
 
-	 <!-- Seccion tabla -->
-	  <section class="container">
-		<table class="table table-bordered">
-		  <thead class="encTabla">
-			<tr>
-			  <th scope="col">#</th>
-			  <th scope="col">Nombre</th>
-			  <th scope="col">Apellidos</th>
-			  <th scope="col">Tipo</th>
-			  <th scope="col">Acción</th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-			  <th scope="row">1</th>
-			  <td>Luis Fernando</td>
-			  <td>Hernandez</td>
-			  <td>Repartidor</td>
-			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
-			 </td>
-      </tr>
-      <tr>
-			  <th scope="row">1</th>
-			  <td>Luis Fernando</td>
-			  <td>Hernandez</td>
-			  <td>Repartidor</td>
-			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
-			 </td>
-      </tr>
-      <tr>
-			  <th scope="row">1</th>
-			  <td>Luis Fernando</td>
-			  <td>Hernandez</td>
-			  <td>Repartidor</td>
-			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
-			 </td>
-			</tr>
+    <h1 class="titulo">Lista de empleados</h1>
+    <button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2" [routerLink] ="['/admin/registro-empleado']">Crear</button>
 
-		  </tbody>
-		</table>
-		  <button type="button" class="btn btn-outline-primary" [routerLink] ="['/admin/registro-empleado']">Crear</button>
-	</section>
-	  <!-- seccion tabla -->
+     <!-- Seccion tabla -->
+      <section class="container">
+          <table class="table table-romanis">
+           <thead class="encTabla">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellidos</th>
+              <th scope="col">Puesto</th>
+              <th scope="col">Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Juan</td>
+              <td>Moran</td>
+              <td>Repartidor</td>
+              <td class="text-center">
+                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
+                <button type="button" class="btn btn-outline-danger">Borrar</button>
+             </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>David</td>
+              <td>Roa</td>
+              <td>Repartidor</td>
+              <td class="text-center">
+                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
+                <button type="button" class="btn btn-outline-danger">Borrar</button>
+             </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Pedro</td>
+              <td>Picapiedra</td>
+              <td>Cocinero</td>
+              <td class="text-center">
+                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
+                <button type="button" class="btn btn-outline-danger">Borrar</button>
+             </td>
+            </tr>
+               <tr>
+              <th scope="row">4</th>
+              <td>Raul</td>
+              <td>Karim</td>
+              <td>Administrador</td>
+              <td class="text-center">
+                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-empleado']">Editar</button>
+                <button type="button" class="btn btn-outline-danger">Borrar</button>
+             </td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+      <!-- seccion tabla -->
 
-	  <!-- Paginacion -->
-<section class="container mt-4">
-	<div>
-	<nav aria-label="...">
-	  <ul class="pagination">
-		<li class="page-item disabled">
-		  <a class="page-link" href="#" tabindex="-1">Previous</a>
-		</li>
-		<li class="page-item"><a class="page-link" href="#">1</a></li>
-		<li class="page-item active">
-		  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="page-item"><a class="page-link" href="#">3</a></li>
-		<li class="page-item">
-		  <a class="page-link" href="#">Next</a>
-		</li>
-	  </ul>
-	</nav>
-		</div>
+      <!-- Paginacion -->
+<section class="container mt-4 ">
+    <div>
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+        </div>
 </section>
+      <!-- paginacion -->
+
+  </body>
 </div>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1,thead{
+	font-family: 'Romanesco', cursive;
+}
+
+tbody{
+	font-family: 'Michroma', sans-serif;
+}
+
+.font-romanisCuerpo{
+	font-family: 'Michroma', sans-serif;
+	color: #D6DDDF;
+}
+
+
+.bg-romanisRojo {
+  background-color: #AD1300 !important;
+}
+
+.titulo {
+  margin: 2rem 2rem 0rem;
+  color: #FAA402;
+  font-size: 50px;
+
+}
+
+.encTabla{
+	font-size: 35px;
+	border: 2px solid #8592FD;
+}
+
+.tituloproducto {
+  margin: 2rem 8rem 1rem;
+  color: #FAA402;
+
+}
+
+.margenesS{
+	margin: 2rem 8rem;
+}
+
+.producto{
+	margin: 4rem 6rem;
+
+}
+
+.bg-romanisProd{
+	background-color: #D6DDDF;
+}
+
+.table-romanis {
+  border: 2px solid #8592FD;
+}
+
+.table-romanis tr,
+.table-romanis th,
+.table-romanis td {
+  border: 2px solid #8592FD;
+  border-bottom-width: 2px solid #8592FD;
+}
+
+.table-romanis thead th,
+.table-romanis thead td {
+  border: 2px solid #8592FD;
+  border-bottom-width: 2px solid #8592FD;
+}
