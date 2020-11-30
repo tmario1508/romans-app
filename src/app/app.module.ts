@@ -27,6 +27,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActualizarProductoComponent } from './pages/admin/actualizar-producto/actualizar-producto.component';
 import { ActualizarEmpleadoComponent } from './pages/admin/actualizar-empleado/actualizar-empleado.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +59,10 @@ import { ActualizarEmpleadoComponent } from './pages/admin/actualizar-empleado/a
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

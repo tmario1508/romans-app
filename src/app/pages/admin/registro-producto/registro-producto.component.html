@@ -1,35 +1,34 @@
-
 	<h1 class="titulo">Crear producto</h1>
   <div class="container">
-    <form class="list-group-item">
+    <form [formGroup]="RproductoForm" (ngSubmit)="onRegistroProducto()" class="list-group-item">
       <div class="form-group row">
 
         <label class="col-sm-1  col-form-label">Nombre:</label>
         <div class="col-sm col-md-12">
-        <input type="text" class="form-control" id="textoDescripcion" placeholder="Nombre">
+        <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
         </div>
 
         <label class="col-sm-1  col-form-label">Imagen:</label>
         <div class="col-sm col-md-12">
-        <input type="text" class="form-control" id="textoDescripcion" placeholder="Imagen">
+        <input type="text" class="form-control" formControlName="Imagen" placeholder="Imagen">
         </div>
 
 
         <label class="col-sm-1  col-form-label">Descripcion:</label>
         <div class="col-sm col-md-12">
-        <input type="text" class="form-control" id="textoDescripcion" placeholder="Descripcion">
+        <input type="text" class="form-control" formControlName="Descripcion" placeholder="Descripcion">
         </div>
     </div>
 
     <div class="form-group row">
       <label class="col-sm-1 col-form-label">Precio:</label>
         <div class="col-sm col-md-4">
-        <input type="text" class="form-control" id="textoDescripcion" placeholder="Precio">
+        <input type="number" class="form-control" formControlName="Precio" placeholder="Precio">
         </div>
 
         <label class="col-sm-1 col-form-label">Categoria:</label>
         <div class="col-sm col-md-4">
-          <select class="form-control" name="cmbCategoria" placeholder="Categoria">
+          <select class="form-control" formControlName="IdCategoria" placeholder="Categoria">
             <option value="1">Hamburguesas</option>
             <option value="2">Alitas</option>
             <option value="3">Bebidas</option>
@@ -39,7 +38,7 @@
        </div>
 
        <div class="form-group row">
-        <button type="button" class="btn btn-outline-primary">Crear</button>
+        <button type="submit" class="btn btn-outline-primary">Crear</button>
        </div>
     </form>
 

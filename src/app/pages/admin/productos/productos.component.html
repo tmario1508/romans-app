@@ -16,8 +16,9 @@
   <body>
 
     <div class="contenedor container-fluid">
+      <p>{{listProductos | json}}</p>
 	<h1 class="titulo">Lista de productos</h1>
-	<button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2">Crear</button>
+	<button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2" [routerLink] ="['/admin/registro-producto']">Crear</button>
 
 	 <!-- Seccion tabla -->
 	  <section class="container">
@@ -33,50 +34,18 @@
 			</tr>
 		  </thead>
 		  <tbody>
-			<tr>
-			  <th scope="row">1</th>
-			  <td>Alitas</td>
-			  <td>Alitas con salsa de tu preferencia</td>
-			  <td>$89</td>
-			  <td>2</td>
+			<tr *ngFor="let item of listProductos">
+			  <th scope="row">{{item.idProducto}}</th>
+			  <td>{{item.nombre}}</td>
+			  <td>{{item.descripcion}}</td>
+			  <td>{{item.precio}}</td>
+			  <td>{{item.idCategoria}}</td>
 			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
+				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/actualizar-producto', item.idProducto]">Editar</button>
+				<button type="button" class="btn btn-outline-danger" (click)="onDeleteProducto(item.idProducto)" >Borrar</button>
 			 </td>
 			</tr>
-			<tr>
-			  <th scope="row">2</th>
-			  <td>Hamburguesa</td>
-			  <td>Carne de res, va acompañada de papas</td>
-			  <td>$150</td>
-			  <td>1</td>
-			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
-			 </td>
-			</tr>
-			<tr>
-			  <th scope="row">3</th>
-			  <td>Cerveza</td>
-			  <td>Modelo 355 ml</td>
-			  <td>$49</td>
-			  <td>3</td>
-			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
-			 </td>
-			</tr>
-			   <tr>
-			  <th scope="row">4</th>
-			  <td>Tiramisu</td>
-			  <td>Sabor limon con crema</td>
-			  <td>$67</td>
-			  <td>4</td>
-			  <td class="text-center">
-				<button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-				<button type="button" class="btn btn-outline-danger">Borrar</button>
-			 </td>
-			</tr>
+
 		  </tbody>
 		</table>
 		  <button type="button" class="btn btn-outline-primary" [routerLink] ="['/admin/registro-producto']">Crear</button>

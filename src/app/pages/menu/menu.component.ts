@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductoService} from '../../services/producto.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  MenuList;
+  constructor(private _ProductoController:ProductoService) {
+    //Pretederminado Categoria 1
+    this.getMenu(1);
+  }
 
   ngOnInit(): void {
   }
+
+  getMenu(categoria){
+    this._ProductoController.GetProductoByCategoria(categoria).subscribe((data:any) =>{
+      this.MenuList = data;
+  });
+}
 
 }
