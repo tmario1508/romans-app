@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ajm3k4');
+  src:  url('../fonts/icomoon.eot?ajm3k4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ajm3k4') format('truetype'),
+    url('../fonts/icomoon.woff?ajm3k4') format('woff'),
+    url('../fonts/icomoon.svg?ajm3k4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coliseo:before {
+  content: "\e900";
+  color: #9f0923;
+}
+.icon-home:before {
+  content: "\e901";
+  color: #9f0923;
+}
+.icon-menu:before {
+  content: "\e902";
+  color: #9f0923;
+}
+.icon-orden .path1:before {
+  content: "\e903";
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+  opacity: 0.26;
+}
+.icon-orden .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path5:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path6:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path7:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path8:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path9:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path10:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path11:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path12:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-orden .path13:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(159, 9, 35);
+}
+.icon-usuario:before {
+  content: "\e910";
+  color: #9f0923;
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}

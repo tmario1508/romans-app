@@ -1,17 +1,72 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<body class="bg-romanisProd">
 
-	<!-- Importacion fuentes -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+  <h1 class="titulo">Lista de productos</h1>
+  <button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2" [routerLink] ="['/admin/registro-producto']">Crear</button>
 
-    <title>Sitio buuurrstrap!</title>
-  </head>
+   <!-- Seccion tabla -->
+    <section class="container">
+        <table class="table table-romanis">
+         <thead class="encTabla">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Alitas</td>
+            <td>Alitas con salsa de tu preferencia</td>
+            <td>$89</td>
+            <td>2</td>
+            <td class="text-center">
+              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
+              <button type="button" class="btn btn-outline-danger">Borrar</button>
+           </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Hamburguesa</td>
+            <td>Carne de res, va acompañada de papas</td>
+            <td>$150</td>
+            <td>1</td>
+            <td class="text-center">
+              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
+              <button type="button" class="btn btn-outline-danger">Borrar</button>
+           </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Cerveza</td>
+            <td>Modelo 355 ml</td>
+            <td>$49</td>
+            <td>3</td>
+            <td class="text-center">
+              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
+              <button type="button" class="btn btn-outline-danger">Borrar</button>
+           </td>
+          </tr>
+             <tr>
+            <th scope="row">4</th>
+            <td>Tiramisu</td>
+            <td>Sabor limon con crema</td>
+            <td>$67</td>
+            <td>4</td>
+            <td class="text-center">
+              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
+              <button type="button" class="btn btn-outline-danger">Borrar</button>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+    <!-- seccion tabla -->
 
+<<<<<<< HEAD
 	<!-- Inicio Body -->
   <body>
 
@@ -53,30 +108,28 @@
 	  <!-- seccion tabla -->
 
 	  <!-- Paginacion -->
+=======
+    <!-- Paginacion -->
+>>>>>>> 23ad78ade859a8aea1f784ae43b805c527f1bc40
 <section class="container mt-4">
-	<div>
-	<nav aria-label="...">
-	  <ul class="pagination">
-		<li class="page-item disabled">
-		  <a class="page-link" href="#" tabindex="-1">Previous</a>
-		</li>
-		<li class="page-item"><a class="page-link" href="#">1</a></li>
-		<li class="page-item active">
-		  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="page-item"><a class="page-link" href="#">3</a></li>
-		<li class="page-item">
-		  <a class="page-link" href="#">Next</a>
-		</li>
-	  </ul>
-	</nav>
-		</div>
+  <div>
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
 </section>
-	  <!-- Paginacion -->
-</div>
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script>
+    <!-- paginacion -->
 
-  </body>
-</html>
+</body>

@@ -5,16 +5,14 @@ h1,thead{
 	font-family: 'Romanesco', cursive;
 }
 
+tbody{
+	font-family: 'Michroma', sans-serif;
+}
+
 .bg-dark {
   background-color: #AD1300 !important;
 }
-.contenedor{
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 .titulo {
   margin: 2rem 2rem 0rem;
   color: #FAA402;
@@ -23,7 +21,8 @@ h1,thead{
 }
 
 .encTabla{
-	font-size: 30px;
+	font-size: 35px;
+	border: 2px solid #8592FD;
 }
 
 .tituloproducto {
@@ -41,3 +40,23 @@ h1,thead{
 
 }
 
+.bg-romanisProd{
+	background-color: #D6DDDF;
+}
+
+.table-romanis {
+  border: 2px solid #8592FD;
+}
+
+.table-romanis tr,
+.table-romanis th,
+.table-romanis td {
+  border: 2px solid #8592FD;
+  border-bottom-width: 2px solid #8592FD;
+}
+
+.table-romanis thead th,
+.table-romanis thead td {
+  border: 2px solid #8592FD;
+  border-bottom-width: 2px solid #8592FD;
+}
