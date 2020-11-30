@@ -1,4 +1,3 @@
-
 /* GAMA DE COLORES */
 .bg-ro-black, .bg-ro-black.active a:link {
 	background-color: #000000;
@@ -118,7 +117,6 @@
 .form-signin{
 	width: 100%;
 	max-width: 330px;
-	
 	padding: 15px;
 	margin: auto;
 }

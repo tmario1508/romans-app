@@ -1,4 +1,42 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-ro-black">
+  <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item-ro activo">
+                    <a class="nav-link" [routerLink] ="['/']"><span class="icon-home"></span> Home</a>
+                </li>
+                <li class="nav-item-ro dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu"> Menú</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" [routerLink] ="['/']">Hamburguesas</a>
+                        <a class="dropdown-item" [routerLink] ="['/']">Alitas</a>
+                        <a class="dropdown-item" [routerLink] ="['/']">Postres</a>
+                        <a class="dropdown-item" [routerLink] ="['/']">Bebidas</a>
+                    </div>
+                </li>
+                <li class="nav-item-ro">
+                    <a class="nav-link" [routerLink] ="['/carrito']"><span class="icon"> Orden</span></a>
+                </li>
+                <li class="nav-item-ro">
+                    <a class="nav-link" [routerLink] ="['/login']"><span class="icon-usuario"> Iniciar Sesión</span></a>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+            <button class="btn btn-outline-success-ro my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+</nav>
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">LOGOTIPO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -49,4 +87,4 @@
 
     </ul>
   </div>
-</nav>
+</nav> -->
