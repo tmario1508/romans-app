@@ -1,74 +1,3 @@
-<body class="bg-romanisProd">
-
-  <h1 class="titulo">Lista de productos</h1>
-  <button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2" [routerLink] ="['/admin/registro-producto']">Crear</button>
-
-   <!-- Seccion tabla -->
-    <section class="container">
-        <table class="table table-romanis">
-         <thead class="encTabla">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Categoría</th>
-            <th scope="col">Acción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Alitas</td>
-            <td>Alitas con salsa de tu preferencia</td>
-            <td>$89</td>
-            <td>2</td>
-            <td class="text-center">
-              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-              <button type="button" class="btn btn-outline-danger">Borrar</button>
-           </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Hamburguesa</td>
-            <td>Carne de res, va acompañada de papas</td>
-            <td>$150</td>
-            <td>1</td>
-            <td class="text-center">
-              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-              <button type="button" class="btn btn-outline-danger">Borrar</button>
-           </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Cerveza</td>
-            <td>Modelo 355 ml</td>
-            <td>$49</td>
-            <td>3</td>
-            <td class="text-center">
-              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-              <button type="button" class="btn btn-outline-danger">Borrar</button>
-           </td>
-          </tr>
-             <tr>
-            <th scope="row">4</th>
-            <td>Tiramisu</td>
-            <td>Sabor limon con crema</td>
-            <td>$67</td>
-            <td>4</td>
-            <td class="text-center">
-              <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/detalle-producto']">Editar</button>
-              <button type="button" class="btn btn-outline-danger">Borrar</button>
-           </td>
-          </tr>
-        </tbody>
-      </table>
-  </section>
-    <!-- seccion tabla -->
-
-<<<<<<< HEAD
-	<!-- Inicio Body -->
-  <body>
 
     <div class="contenedor container-fluid">
       <p>{{listProductos | json}}</p>
@@ -108,9 +37,6 @@
 	  <!-- seccion tabla -->
 
 	  <!-- Paginacion -->
-=======
-    <!-- Paginacion -->
->>>>>>> 23ad78ade859a8aea1f784ae43b805c527f1bc40
 <section class="container mt-4">
   <div>
   <nav aria-label="...">
@@ -131,5 +57,3 @@
       </div>
 </section>
     <!-- paginacion -->
-
-</body>
