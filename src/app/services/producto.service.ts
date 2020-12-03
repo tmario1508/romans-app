@@ -13,6 +13,8 @@ export class ProductoService {
 
   URL_BASE:string = "https://localhost:44308/api/producto";
   InfoProductoId;
+  ultimosproductos:any ={};
+  ultimosproductosf:any ={};
   /*INSERT PRODUCTO*/
   public InsertProduct = (nombre,descripcion,precio,imagen,categoria) =>{
     let bodyRequest ={
@@ -82,6 +84,22 @@ export class ProductoService {
   public GetAllProductos = ()=>{
     try {
       return this.http.get(this.URL_BASE);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  /*GET INDEX PRODUCTOS*/
+  public GetIndexProductos = (cantidad:number)=>{
+    try {
+     return this.http.get(this.URL_BASE).subscribe(data =>{
+        this.ultimosproductos = Object.values(data);
+        Array.prototype.lastIndexOf = function(n){
+          return this.slice(-n)
+        };
+        this.ultimosproductosf = this.ultimosproductos.lastIndexOf(cantidad).reverse();
+        console.log(this.ultimosproductosf);
+    });
     } catch (error) {
       console.log(error);
     }
