@@ -65,12 +65,10 @@
 }
 
 .btn-delete{
-  border-radius: 5%;
   justify-content:center;
-  background-color: #FAA402;
+  background-color: whitesmoke;
   color: black;
-  border-color: black;
-  border-width: 2px;
+  border-width: 0px;
   transition: 0.3s;
 }
 

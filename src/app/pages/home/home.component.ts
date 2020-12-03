@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductoService} from '../../services/producto.service';
+import {CarritoService} from '../../services/carrito.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent implements OnInit {
   MenuList;
   ultimosproductos:any ={};
 
-  constructor(public _ProductoController:ProductoService) {
+  constructor(public _ProductoController:ProductoService, private _carritoService:CarritoService) {
     this.getIndexMenu(6);
   }
 
@@ -20,5 +21,26 @@ export class HomeComponent implements OnInit {
 
   getIndexMenu(cantidad){
     this._ProductoController.GetIndexProductos(cantidad);
+  }
+
+  onAgregarCarrito(producto)
+  {
+    let totalMXN = 0;
+    totalMXN = producto.precio * 1;
+
+    let p = {
+      codigo:producto.idProducto,
+      nombre:producto.nombre,
+      descripcion:producto.descripcion,
+      precio:producto.precio,
+      imagen:producto.imagen,
+      categoria:parseInt(producto.idCategoria),
+      cantidad: 1,
+      total:totalMXN,
+    };
+
+    this._carritoService.AgregarCarrito(p);
+    //this._cartService.cargar_Productos();
+    //this.pService.cargar_Productos();
   }
 }

@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class CarritoService {
 
   constructor() { }
-
   carritoLocal;
 
   /*AGREGAR PRODUCTO AL CARRITO*/
@@ -17,7 +16,7 @@ export class CarritoService {
     if(listCart)
     {
       //Buscamos si ya cargamos ese item en el carrito
-      let objIndex = listCart.findIndex((obj => obj.id == producto.idProducto));
+      let objIndex = listCart.findIndex((obj => obj.codigo == producto.codigo));
       //Si ya cargamos uno aumentamos su cantidad
       if(objIndex != -1)
       {
@@ -48,9 +47,29 @@ export class CarritoService {
     localStorage.setItem('carrito', JSON.stringify(listCart));
   }
 
-  /*ELIMINAR PRODUCTO DEL CARRITO*/
+  /*ELIMINAR CANTIDAD PRODUCTO DEL CARRITO*/
+  RestarItemCarrito(producto){
+    //Obtenemos el valor actual
+    let listCart = this.getCarrito();
+    //Buscamos el item del carrito para eliminar
+    let objIndex = listCart.findIndex((obj => obj.codigo == producto.codigo));
+    if(objIndex != -1)
+    {
+      //Seteamos la cantidad en 1 (ya que los array se modifican los valores por referencia, si vovlemos a agregarlo la cantidad no se reiniciará)
+      listCart[objIndex].cantidad -= 1;
+      listCart[objIndex].total = (listCart[objIndex].cantidad) * (producto.precio);
 
-  /*GENERAR PEDIDO*/
+      //Eliminamos el objeto si llego a numero cero
+      if(listCart[objIndex].cantidad == 0){
+        listCart.splice(objIndex,1);
+      }
+    }
+    //Enviamos el valor a todos los Observers que estan escuchando nuestro Observable
+    //this.listaCarrito.push(producto);
+    localStorage.setItem('carrito', JSON.stringify(listCart));
+  }
+
+  /*GENERAR PEDIDO REGISTRO EN MONGODB*/
 
   /*OBTENER CARRITO ACTUAL*/
   getCarrito(){
@@ -61,6 +80,31 @@ export class CarritoService {
 			this.carritoLocal = null;
     }
     return this.carritoLocal;
+  }
+
+  /*ELIMINAR CARRITO*/
+  BorrarCarrito(){
+    localStorage.setItem('carrito', '');
+    localStorage.removeItem('carrito');
+  }
+
+  /*OBTENER EL TOTAL*/
+  CalcularTotal(){
+    try {
+  //Obtenemos el valor actual
+  let listCart = this.getCarrito();
+  let total = 0;
+
+  for (let index = 0; index < listCart.length; index++) {
+  let element = Number(listCart[index].precio * listCart[index].cantidad);
+  //SI TIENE DESCUENTO
+    total = total + element;
+  }
+  return total;
+    } catch (error) {
+
+    }
+
   }
 
 }

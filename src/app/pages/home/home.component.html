@@ -3,18 +3,18 @@
   <h2 class="text-center">Ultimos productos</h2>
   <hr class="linea-negra">
 </div>
-<div class="ultimos-productos">
+<div class="encabezado ultimos-productos">
   <section class="container">
       <article class="row">
-          <div class="col-sm col-md-4"  *ngFor="let item of _ProductoController.ultimosproductosf">
+          <div class="col-sm col-md-4" *ngFor="let item of _ProductoController.ultimosproductosf">
               <div class="card mb-2">
-                  <img class="card-img-top"
+                  <img class="card-img-top img-fluid"
                        src={{item.imagen}}
                        alt={{item.imagen}}>
                   <div class="card-body">
                       <h4 class="card-title">{{item.nombre}}</h4>
                       <p class="card-text">{{item.descripcion}}</p>
-                      <a class="btn btn-primary">Agregar al carrito</a>
+                      <a class="btn btn-primary" (click)="onAgregarCarrito(item)">Agregar al carrito</a>
                   </div>
               </div>
           </div>

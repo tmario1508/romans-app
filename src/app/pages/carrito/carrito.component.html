@@ -11,7 +11,7 @@
 
     <div class="row">
       <div class=" col-sm col-md-12 col-lg-12 col-xl-12 pedido-row table-dark">
-        <h5 class="subtitulo">Total: $2500 MXN</h5>
+        <h5 class="subtitulo">Total: ${{this.total}} MXN</h5>
       </div>
     </div>
 
@@ -19,62 +19,42 @@
 
 
     <div class="row producto-row">
-      <ul class="col-sm col-md-12 col-lg-12 col-xl-12  mb-1 mt-1">
+      <ul class="col-sm col-md-12 col-lg-12 col-xl-12  mb-1 mt-1" *ngFor="let item of listaCarrito">
         <li class="row-items container-card">
 
           <div class="img-car">
-          <img class="foto-car img-fluid" src="https://static.onecms.io/wp-content/uploads/sites/21/2014/09/04/b8b86683-aa45-4419-9e1f-c785e7bdc35d.jpg" >
+          <img class="foto-car img-fluid" src={{item.imagen}} >
           </div>
           <div class="row info-producto ">
 
           <div class="centradoi">
-          <h5>Alitas Buffalo</h5>
-          <p>Cantidad: 2</p>
+          <h5>{{item.nombre}}</h5>
+          <p>Cantidad: {{item.cantidad}}</p>
           </div>
 
           <div class="producto-precio centrado">
-            <p>$320</p>
+            <p>${{item.total}}</p>
           </div>
 
           <div class="btn-car centrado">
-          <button type="button" class="btn btn-secondary btn-delete">x</button>
+          <button type="button" class="btn btn-secondary btn-delete" (click)="EliminarItem(item)">x</button>
           </div>
-
         </div>
+
         </li>
         <hr class="hr-blanco">
-        <li class="row-items container-card">
-
-          <div class="img-car">
-          <img class="foto-car img-fluid" src="https://t1.rg.ltmcdn.com/es/images/1/4/0/img_ensalada_cesar_original_46041_600.jpg" >
-          </div>
-          <div class="row info-producto">
-
-          <div class="centradoi">
-          <h5>Ensalada Cesar</h5>
-          <p>Cantidad: 1</p>
-          </div>
-
-          <div class="centrado">
-            <p>$140</p>
-          </div>
-
-          <div class="centrado">
-          <button type="button" class="btn btn-secondary btn-delete">x</button>
-          </div>
-
-        </div>
-        <hr class="hr-blanco">
-        </li>
-        <hr class="hr-blanco">
-
-        <div class="row short">
-          <div class=" col-sm col-md-12 col-lg-12 col-xl-12 compra-row table-dark">
-            <h4>Realizar Pedido</h4>
-          </div>
-        </div>
-
       </ul>
+      <div class="row short">
+        <div class=" col-sm col-md-12 col-lg-12 col-xl-12 compra-row table-dark">
+          <h4>Realizar Pedido</h4>
+        </div>
+      </div>
+
+      <div class="row short">
+        <div class=" col-sm col-md-12 col-lg-12 col-xl-12 compra-row table-dark">
+          <h4 (click)="onEliminarCarrito()">Eliminar Pedido</h4>
+        </div>
+      </div>
     </div>
 
   </div>
