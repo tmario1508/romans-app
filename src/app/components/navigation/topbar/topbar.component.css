@@ -33,3 +33,9 @@
 .dropdown-menu-ro {
   background-color: #000000 !important;
 }
+
+.logo {
+	max-width: 150px;
+	height: auto;
+	margin: 1px 1px;
+}
