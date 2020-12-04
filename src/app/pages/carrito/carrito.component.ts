@@ -23,10 +23,14 @@ export class CarritoComponent implements OnInit {
   }
 
   onEliminarCarrito(){
+    alert('Se ha eliminado el pedido');
     this._carritoService.BorrarCarrito();
+    this.listaCarrito = this._carritoService.getCarrito();
+    this.total = this._carritoService.CalcularTotal();
   }
 
   EliminarItem(producto){
+    alert('Se ha eliminado 1 orden de: '+producto.nombre);
     this.listaCarrito = this._carritoService.getCarrito();
     this._carritoService.RestarItemCarrito(producto);
     this.listaCarrito = this._carritoService.getCarrito();
