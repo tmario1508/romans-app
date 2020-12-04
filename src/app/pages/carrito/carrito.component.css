@@ -46,6 +46,7 @@
 
 .short{
   margin: 5px;
+  width: 100%;
 }
 
 .producto-row{
@@ -101,6 +102,7 @@
 
 .centradoi{
   align-self: center;
+  width: 30%;
 }
 
 /*Resolucion de laptop*/

@@ -10,10 +10,10 @@ h1,thead{
 }
 
 .titulo {
-  margin: 2rem 2rem 0rem;
+  text-align: center;
   color: #FAA402;
   font-size: 50px;
-
+  margin: 0;
 }
 
 .encTabla{

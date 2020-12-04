@@ -25,7 +25,6 @@ const routes:Routes = [
 
   /*ADMIN*/
   {path:'admin/detalle-empleado',component: DetalleEmpleadoComponent},
-  {path:'admin/detalle-producto',component: DetalleProductoComponent},
   {path:'admin/empleados',component: EmpleadosComponent},
   {path:'admin/productos',component: ProductosComponent},
   {path:'admin/registro-empleado',component: RegistroEmpleadoComponent},
@@ -46,6 +45,7 @@ const routes:Routes = [
   {path:'login',component: LoginComponent},
   {path:'registro',component: RegistroComponent},
   {path:'menu/:categoria',component: MenuComponent},
+  {path:'menu/platillo/:platillo',component: DetalleProductoComponent},
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'**', component: PageNotFoundComponent}
 ];

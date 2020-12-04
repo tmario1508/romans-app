@@ -38,9 +38,7 @@ export class HomeComponent implements OnInit {
       cantidad: 1,
       total:totalMXN,
     };
-
+    alert('Se ha agregado 1 orden de: '+producto.nombre+' al carrito');
     this._carritoService.AgregarCarrito(p);
-    //this._cartService.cargar_Productos();
-    //this.pService.cargar_Productos();
   }
 }

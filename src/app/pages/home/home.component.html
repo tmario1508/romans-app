@@ -13,8 +13,9 @@
                        alt={{item.imagen}}>
                   <div class="card-body">
                       <h4 class="card-title">{{item.nombre}}</h4>
-                      <p class="card-text">{{item.descripcion}}</p>
-                      <a class="btn btn-primary" (click)="onAgregarCarrito(item)">Agregar al carrito</a>
+                      <p class="card-text">{{item.descripcion.substr(0,80)}}...</p>
+                      <a class="btn btn-secondary w-100 mb-2" [routerLink] ="['/menu/platillo',item.idProducto]" >Ver mas</a>
+                      <a class="btn btn-primary w-100" (click)="onAgregarCarrito(item)">Agregar al carrito</a>
                   </div>
               </div>
           </div>
