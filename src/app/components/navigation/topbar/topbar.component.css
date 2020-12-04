@@ -5,135 +5,31 @@
 	color: #AD1300 !important;
 }
 
-.bg-ro-black a:hover {
+/* .bg-ro-black a:hover {
 	color: #AD1300 !important;
 	background-color: #D6DDDF !important;
-}
+} */
 
 .activo a {
 	color: #AD1300 !important;
 }
 
-.bg-yellow {
-  background-color: #FAA402 !important;
+.bg-ro-black li a:hover {
+	color: #AD1300 !important;
+  background-color: #fff !important;
+  border-radius: 60px;
+  font-size: 26px;
+  margin-top:-3px;
 }
 
-.bg-black {
-  background-color: #000000 !important;
-}
 
-.bg-blue-light {
-  background-color: #D6DDDF !important;
-}
-
-.dropdown-item-ro {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #AD1300 !important;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item-ro.show .nav-link-ro {
-  color: #AD1300;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
-
-.navbar-dark-ro a:link{
-  color: #D6DDDF;
+.bg-ro-black li a{
   font-family: 'Romanesco', cursive;
-}
-.navbar-dark-ro:focus{
-	color: #AD1300;
-}
-
-.navbar-dark-ro .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #AD1300;
-}
-
-.logo {
-	max-width: 50px;
-	height: auto;
-	margin: 1px 1px;
-}
-
-.tam-img{
-	max-width: 90%;
-	height: 90%;
-}
-
-.carousel-espacio{
-	margin: 2rem;
-}
-
-.footer-ro{
-	background: #000000;
-	text-align: center;
-	color: #AD1300;
-}
-
-.form-control-ro {
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-bottom: 1rem;
-}
-
-.btn-primary-ro{
+  font-size: 24px;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  margin: 3px;
 }
 
-.btn-primary-ro:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-}
-
-.btn-primary-ro:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-}
-
-.form-signin{
-	width: 100%;
-	max-width: 330px;
-	
-	padding: 15px;
-	margin: auto;
-}
-
-.form-ro-logo{
-	vertical-align: middle;
-}
-
-.btn-outline-success-ro {
-  color: #D6DDDF;
-  border-color: #8592FD;
-}
-
-.btn-outline-success-ro:hover {
-  color: #AD1300;
-  background-color: #D6DDDF;
-  border-color: #AD1300;
+.dropdown-menu-ro {
+  background-color: #000000 !important;
 }

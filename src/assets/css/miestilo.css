@@ -1,13 +1,4 @@
 /* GAMA DE COLORES */
-.bg-ro-black, .bg-ro-black.active a:link {
-	background-color: #000000;
-	color: #AD1300 !important;
-}
-
-.bg-ro-black a:hover {
-	color: #AD1300 !important;
-	background-color: #D6DDDF !important;
-}
 
 .activo a {
 	color: #AD1300 !important;
@@ -25,17 +16,29 @@
   background-color: #D6DDDF !important;
 }
 
-.dropdown-item-ro {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
+.btn-ro{
+  display: inline-block;
   font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #D6DDDF;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-ro:hover{
   color: #AD1300 !important;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
+  background-color: #D6DDDF !important;
+  border-color: #AD1300 !important;
 }
 
 .nav-tabs .nav-link.active,
@@ -72,12 +75,6 @@
 	margin: 2rem;
 }
 
-.footer-ro{
-	background: #000000;
-	text-align: center;
-	color: #AD1300;
-}
-
 .form-control-ro {
   display: block;
   width: 100%;
@@ -97,8 +94,8 @@
 
 .btn-primary-ro{
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #000000;
+  border-color: #D6DDDF;
 }
 
 .btn-primary-ro:hover {
@@ -114,6 +111,14 @@
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
+.list-item-ro {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
 .form-signin{
 	width: 100%;
 	max-width: 330px;
@@ -123,15 +128,4 @@
 
 .form-ro-logo{
 	vertical-align: middle;
-}
-
-.btn-outline-success-ro {
-  color: #D6DDDF;
-  border-color: #8592FD;
-}
-
-.btn-outline-success-ro:hover {
-  color: #AD1300;
-  background-color: #D6DDDF;
-  border-color: #AD1300;
 }

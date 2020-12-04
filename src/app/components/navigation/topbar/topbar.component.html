@@ -4,33 +4,33 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item-ro activo">
+            <ul class="navbar-nav link-ro">
+                <li class="nav-item activo">
                     <a class="nav-link" [routerLink] ="['/']"><span class="icon-home"></span> Home</a>
                 </li>
-                <li class="nav-item-ro dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="icon-menu"> Menú</span>
+                        <span class="icon-menu"></span> Menú
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu dropdown-menu-ro" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" [routerLink] ="['/menu',1]" >Hamburguesas</a>
                         <a class="dropdown-item" [routerLink] ="['/menu',2]" >Alitas</a>
                         <a class="dropdown-item" [routerLink] ="['/menu',3]" >Postres</a>
                         <a class="dropdown-item" [routerLink] ="['/menu',4]" >Bebidas</a>
                     </div>
                 </li>
-                <li class="nav-item-ro">
-                    <a class="nav-link" [routerLink] ="['/carrito']"><span class="icon"> Orden</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink] ="['/carrito']"><span class="icon-carrito"></span> Orden</a>
                 </li>
-                <li class="nav-item-ro">
-                    <a class="nav-link" [routerLink] ="['/login']"><span class="icon-usuario"> Iniciar Sesión</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink] ="['/conocenos']"><span class="icon-usuario"></span> Conocenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink] ="['/login']"><span class="icon-usuario"></span> Iniciar Sesión</a>
                 </li>
             </ul>
         </div>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-            <button class="btn btn-outline-success-ro my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
+
 </nav>
 
 
