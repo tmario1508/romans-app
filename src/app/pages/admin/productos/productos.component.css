@@ -1,5 +1,19 @@
 @charset "utf-8";
-/* CSS Document */
+
+.titulo {
+  margin: 2rem 2rem 0rem;
+  color: #FAA402;
+  font-size: 50px;
+  font-family: 'Romanesco', cursive;
+}
+
+.contenedor{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 h1,thead{
 	font-family: 'Romanesco', cursive;

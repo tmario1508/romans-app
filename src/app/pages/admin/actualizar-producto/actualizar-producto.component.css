@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1,thead{
+	font-family: 'Romanesco', cursive;
+}
+
+.bg-dark {
+  background-color: #AD1300 !important;
+}
+
+.titulo {
+  margin: 2rem 2rem 0rem;
+  color: #FAA402;
+  font-size: 50px;
+
+}
+
+.encTabla{
+	font-size: 30px;
+}
+
+.tituloproducto {
+  margin: 2rem 8rem 1rem;
+  color: #FAA402;
+
+}
+
+.margenesS{
+	margin: 2rem 8rem;
+}
+
+.producto{
+	margin: 4rem 6rem;
+
+}
+
+.container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.bg-romanisProd{
+	background-color: #D6DDDF;
+}
+

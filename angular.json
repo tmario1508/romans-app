@@ -122,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Romanis-FrontEnd"
+    }
+  },
+  "defaultProject": "Romanis-FrontEnd",
+  "cli": {
+    "analytics": "4f8e9dd0-17ad-488c-9bba-f3ed75f1749d"
+  }
 }
