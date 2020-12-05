@@ -1,3 +1,19 @@
-<p>AQUI VA EL NAVBAR DE LAS CATEGORIAS</p>
-<p>Menu predeterminado Categoria 1</p>
-<p>{{MenuList | json}}</p>
+<div class="encabezado ultimos-productos">
+  <section class="container">
+      <article class="row">
+          <div class="col-sm col-md-4" *ngFor="let item of MenuList">
+              <div class="card mb-2">
+                  <img class="card-img-top img-fluid"
+                       src={{item.imagen}}
+                       alt={{item.imagen}}>
+                  <div class="card-body">
+                      <h4 class="card-title">{{item.nombre}}</h4>
+                      <p class="card-text">{{item.descripcion.substr(0,80)}}...</p>
+                      <a class="btn btn-secondary w-100 mb-2" [routerLink] ="['/menu/platillo',item.idProducto]" >Ver mas</a>
+                      <a class="btn btn-primary w-100" (click)="onAgregarCarrito(item)">Agregar al carrito</a>
+                  </div>
+              </div>
+          </div>
+      </article>
+  </section>
+</div>
