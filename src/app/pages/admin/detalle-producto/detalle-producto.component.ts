@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ProductoService} from '../../../services/producto.service';
 import {CarritoService} from '../../../services/carrito.service';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-detalle-producto',
@@ -46,8 +47,18 @@ export class DetalleProductoComponent implements OnInit {
       cantidad: 1,
       total:totalMXN,
     };
-    alert('Se ha agregado 1 orden de: '+producto.nombre+' al carrito');
-    this._carritoService.AgregarCarrito(p);
+    if(p){
+      Swal.fire({
+        title: '',
+        icon:'success',
+        text: 'Se ha agregado 1 orden de: '+producto.nombre+' a su pedido',
+        confirmButtonText: `Aceptar`,
+      });
+      this._carritoService.AgregarCarrito(p);
+    }else{
+      
+    }
+
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductoService} from '../../services/producto.service';
 import {CarritoService} from '../../services/carrito.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -38,7 +39,12 @@ export class HomeComponent implements OnInit {
       cantidad: 1,
       total:totalMXN,
     };
-    alert('Se ha agregado 1 orden de: '+producto.nombre+' al carrito');
+    Swal.fire({
+      title: '',
+      icon:'success',
+      text: 'Se ha agregado 1 orden de: '+producto.nombre+' a su pedido',
+      confirmButtonText: `Aceptar`,
+    });
     this._carritoService.AgregarCarrito(p);
   }
 }

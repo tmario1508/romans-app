@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {ProductoService} from '../../../services/producto.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-actualizar-producto',
@@ -12,6 +13,7 @@ export class ActualizarProductoComponent implements OnInit {
 
   infoProducto;
   idProducto;
+
   UproductoForm = new FormGroup({
     Nombre: new FormControl(''),
     Descripcion: new FormControl(''),
@@ -28,6 +30,10 @@ export class ActualizarProductoComponent implements OnInit {
 }
 
   ngOnInit(): void {
+    this.router.params.subscribe((param:any)=>{
+      this.idProducto = param['codigo'];
+      this.getInfoProducto(this.idProducto);
+  });
   }
 
   getInfoProducto(codigo){
@@ -52,7 +58,13 @@ export class ActualizarProductoComponent implements OnInit {
     try{
       let {Nombre,Descripcion,Precio,Imagen,IdCategoria} = this.UproductoForm.value;
       if(Nombre=="" || Descripcion =="" || Precio=="" || Imagen=="" || IdCategoria==""){
-        alert('No puede contener campos vacios para el registro');
+        Swal.fire({
+          position: 'center',
+          icon: 'warning',
+          title: 'No puede contener campos vacios para el registro',
+          showConfirmButton: false,
+          timer: 1500
+        })
       }else{
         this._ProductoController.UpdateProduct(this.idProducto,Nombre,Descripcion,Precio,Imagen,IdCategoria);
       }

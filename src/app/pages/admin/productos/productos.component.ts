@@ -10,19 +10,22 @@ export class ProductosComponent implements OnInit {
 
   listProductos;
   constructor(private _ProductoController:ProductoService) {
-    this._ProductoController.GetAllProductos().subscribe(
-      response => this.listProductos = response,
-    );
+    this.onGetProductos();
   }
 
   ngOnInit(): void {
+    this.onGetProductos();
+  }
+
+  onDeleteProducto(id){
+    this.onGetProductos();
+    this._ProductoController.DeleteProductoById(id);
+    this.onGetProductos();
+  }
+
+  onGetProductos(){
     this._ProductoController.GetAllProductos().subscribe(
       response => this.listProductos = response,
     );
   }
-
-  onDeleteProducto(id){
-    this._ProductoController.DeleteProductoById(id);
-  }
-
 }

@@ -3,6 +3,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { map } from 'rxjs/operators';
 import { observable, Observable } from 'rxjs';
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root'
@@ -33,10 +34,22 @@ export class ProductoService {
       })
     }).subscribe(res =>{
       console.log(res);
-      alert('Producto insertado correctamente en la base de datos');
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Producto insertado correctamente en la base de datos',
+        showConfirmButton: false,
+        timer: 1500
+      })
     },err =>{
       console.log(err);
-      alert('ERROR: No se pudo insertar el producto en la base de datos');
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title: 'ERROR: No se pudo insertar el producto en la base de datos',
+        showConfirmButton: false,
+        timer: 1500
+      })
     });
 
   }
@@ -59,10 +72,22 @@ export class ProductoService {
       })
     }).subscribe(res =>{
       console.log(res);
-      alert('Producto:'+id+' actualizado correctamente en la base de datos');
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Producto:'+id+' actualizado correctamente en la base de datos',
+        showConfirmButton: false,
+        timer: 1500
+      })
     },err =>{
       console.log(err);
-      alert('ERROR: No se pudo actualizar el producto en la base de datos');
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title: 'ERROR: No se pudo actualizar el producto en la base de datos',
+        showConfirmButton: false,
+        timer: 1500
+      })
     });
   }
 
@@ -71,9 +96,21 @@ export class ProductoService {
     try {
       this.http.delete(this.URL_BASE+'/delete/'+id).subscribe(
         res =>{
-        alert('Producto:'+id+' eliminado correctamente en la base de datos');
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Producto:'+id+' eliminado correctamente en la base de datos',
+            showConfirmButton: false,
+            timer: 1500
+          })
       },err =>{
-        alert('ERROR: No se pudo eliminar el producto en la base de datos');
+        Swal.fire({
+          position: 'center',
+          icon: 'warning',
+          title: 'ERROR: No se pudo actualizar el producto en la base de datos',
+          showConfirmButton: false,
+          timer: 1500
+        })
       });
     } catch (error) {
 
@@ -86,6 +123,13 @@ export class ProductoService {
       return this.http.get(this.URL_BASE);
     } catch (error) {
       console.log(error);
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title: 'ERROR: No se pudo encontrar la informacion del servidor',
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
   }
 
@@ -102,6 +146,13 @@ export class ProductoService {
     });
     } catch (error) {
       console.log(error);
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title:  'ERROR: No se pudieron cargar los productos',
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
   }
 
@@ -111,6 +162,13 @@ export class ProductoService {
       return this.http.get(this.URL_BASE+'/category/'+categoria);
     } catch (error) {
       console.log(error);
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title:   'ERROR: No se pudieron cargar los productos',
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
   }
 
@@ -119,7 +177,13 @@ export class ProductoService {
     try {
         return this.http.get(this.URL_BASE+'/search/'+id);
   }catch{
-
+    Swal.fire({
+      position: 'center',
+      icon: 'warning',
+      title:  'ERROR: No se pudo cargar la informacion del producto',
+      showConfirmButton: false,
+      timer: 1500
+    })
   }
 }
 
