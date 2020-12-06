@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API: {
+    EndPoint: {
+      Local: 'https://localhost:44308/api/producto',
+      Azure:'https://romanis-api.azurewebsites.net/api/producto'
+    }
+  }
 };
 
 /*
