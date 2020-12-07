@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EmpleadosService} from '../../../services/empleados.service';
 
 @Component({
   selector: 'app-empleados',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadosComponent implements OnInit {
 
-  constructor() { }
+  listEmpleados;
+
+  constructor(private _EmpleadosController:EmpleadosService) { }
 
   ngOnInit(): void {
+    this.onGetEmpleados();
+  }
+
+  onGetEmpleados(){
+    this._EmpleadosController.GetAllEmpl().subscribe(
+      response => this.listEmpleados = response,
+    );
+  }
+
+  onDeleteEmpleado(id){
+    this.onGetEmpleados();
+    this._EmpleadosController.DeleteEmpeladosById(id);
+    this.onGetEmpleados();
   }
 
 }

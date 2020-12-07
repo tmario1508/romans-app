@@ -9,53 +9,25 @@
           <table class="table table-romanis">
            <thead class="encTabla">
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Nombre</th>
               <th scope="col">Apellidos</th>
-              <th scope="col">Puesto</th>
+              <th scope="col">Rol</th>
+              <th scope="col">Salario</th>
+              <th scope="col">Turno</th>
               <th scope="col">Acción</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Juan</td>
-              <td>Moran</td>
-              <td>Repartidor</td>
+            <tr *ngFor="let item of listEmpleados.empl">
+              <td>{{item.nombre}}</td>
+              <td>{{item.apellido}}</td>
+              <td>{{item.rol}}</td>
+              <td>{{item.salario}}</td>
+              <td>{{item.turno}}</td>
               <td class="text-center">
-                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/actualizar-empleado']">Editar</button>
-                <button type="button" class="btn btn-outline-danger">Borrar</button>
-             </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>David</td>
-              <td>Roa</td>
-              <td>Repartidor</td>
-              <td class="text-center">
-                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/actualizar-empleado']">Editar</button>
-                <button type="button" class="btn btn-outline-danger">Borrar</button>
-             </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Pedro</td>
-              <td>Picapiedra</td>
-              <td>Cocinero</td>
-              <td class="text-center">
-                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/actualizar-empleado']">Editar</button>
-                <button type="button" class="btn btn-outline-danger">Borrar</button>
-             </td>
-            </tr>
-               <tr>
-              <th scope="row">4</th>
-              <td>Raul</td>
-              <td>Karim</td>
-              <td>Administrador</td>
-              <td class="text-center">
-                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/actualizar-empleado']">Editar</button>
-                <button type="button" class="btn btn-outline-danger">Borrar</button>
-             </td>
+                <button type="button" class="btn btn-outline-success" [routerLink] ="['/admin/actualizar-empleado', item._id]">Editar</button>
+                <button type="button" class="btn btn-outline-danger"(click)="onDeleteEmpleado(item._id)" >Borrar</button>
+              </td>
             </tr>
           </tbody>
         </table>

@@ -1,59 +1,51 @@
-
-
-<h1 class="titulo">Actualizar empleado</h1>
+<h1 class="titulo text-dark" >Actualizar empleado</h1>
 <div class="container">
-  <form  class="list-group-item">
-    <div class="form-group row">
+  <form [formGroup]="UpEmpleadoForm" (ngSubmit)="onUpdateEmpleado()" class="list-group-item">
 
+    <div class="form-group row">
       <label class="col-sm-1  col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
+        <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
       </div>
+
+      <label class="col-sm-1  col-form-label">Apellido:</label>
+      <div class="col-sm col-md-12">
+        <input type="text" class="form-control" formControlName="Apellido" placeholder="Apellido">
+      </div>
+
 
       <label class="col-sm-1  col-form-label">Email:</label>
       <div class="col-sm col-md-12">
-      <input type="number" class="form-control" formControlName="Email" placeholder="email@email.com">
-      </div>
-
-
-      <label class="col-sm-1  col-form-label">Contraseña:</label>
-      <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Contraseña" placeholder="Contraseña">
+        <input type="email" class="form-control" formControlName="Email" placeholder="email@email.com">
       </div>
 
       <label class="col-sm-1  col-form-label">Salario:</label>
       <div class="col-sm col-md-12">
-      <input type="number" class="form-control" formControlName="Salario" placeholder="$$$$">
+        <input type="number" class="form-control" formControlName="Salario" placeholder="$$$$">
+      </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-1  col-form-label">Rol:</label>
+        <div class="col-sm col-md-5">
+          <select class="form-control" formControlName="Rol" placeholder="Rol">
+            <option value="Administrador">Administrador</option>
+            <option value="Repartidor">Repartidor</option>
+          </select>
+        </div>
+
+        <label class="col-sm-1 col-form-label">Turno:</label>
+        <div class="col-sm col-md-5">
+          <select class="form-control" formControlName="Turno" placeholder="Turno">
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+          </select>
+        </div>
+    </div>
+
+      <div class="form-group row">
+        <button type="submit" class="btn btn-outline-primary">Actualizar</button>
       </div>
 
-
-      <label class="col-sm-1  col-form-label">Funciones:</label>
-      <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Descripcion" placeholder="Descripcion">
-      </div>
-  </div>
-
-  <div class="form-group row">
-    <label class="col-sm-1 col-form-label">Turno:</label>
-      <div class="col-sm col-md-4">
-        <select class="form-control" formControlName="IdTurno" placeholder="Turno">
-          <option value="1">Maturino</option>
-          <option value="2">Vespertino</option>
-        </select>
-      </div>
-
-      <label class="col-sm-1 col-form-label">Tipo:</label>
-      <div class="col-sm col-md-4">
-        <select class="form-control" formControlName="IdTipo" placeholder="Tipo">
-          <option value="1">1</option>
-          <option value="2">2</option>
-        </select>
-      </div>
-     </div>
-
-     <div class="form-group row">
-      <button type="submit" class="btn btn-outline-primary">Crear</button>
-     </div>
   </form>
-
 </div>

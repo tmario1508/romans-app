@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-perfil',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+
+  infoUser;
+  constructor(private _UsuarioController:UsuarioService) { }
 
   ngOnInit(): void {
+    this.infoUser= JSON.parse(localStorage.getItem('userInf'));
+  }
+
+  cargaInfo(){
+    //location.reload();
+  }
+
+  onDeleteUsuario(id){
+    this._UsuarioController.DeleteUsuarioById(id);
   }
 
 }

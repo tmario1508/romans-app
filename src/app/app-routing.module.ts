@@ -30,11 +30,11 @@ const routes:Routes = [
   {path:'admin/registro-empleado',component: RegistroEmpleadoComponent},
   {path:'admin/registro-producto',component: RegistroProductoComponent},
   {path:'admin/actualizar-producto/:codigo',component: ActualizarProductoComponent},
-  {path:'admin/actualizar-empleado',component: ActualizarEmpleadoComponent},
+  {path:'admin/actualizar-empleado/:codigo',component: ActualizarEmpleadoComponent},
 
   /*USUARIO*/
   {path:'perfil',component: PerfilComponent},
-  {path:'actualizar-perfil',component: ActualizarPerfilComponent},
+  {path:'actualizar-perfil/:codigo',component: ActualizarPerfilComponent},
   {path:'pedidos',component: PedidosComponent},
   {path:'detalle/pedido',component: DetallePedidoComponent},
 
