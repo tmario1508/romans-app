@@ -3,15 +3,20 @@
   <form [formGroup]="RempleadoForm" (ngSubmit)="onRegistroEmpleado()" class="list-group-item">
     <div class="form-group row">
 
-      <label class="col-sm-1  col-form-label">Nombre:</label>
+
+
+      <label class="col-sm  col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
       </div>
 
-      <label class="col-sm-1  col-form-label">Apellido:</label>
+
+      <label class="col-sm  col-form-label">Apellidos:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Apellido" placeholder="Apellido">
       </div>
+
+
 
       <label class="col-sm-1  col-form-label">Email:</label>
       <div class="col-sm col-md-12">
@@ -19,17 +24,25 @@
       </div>
 
 
-      <label class="col-sm-1  col-form-label">Contraseña:</label>
+
+
+      <label class="col-sm  col-form-label">Contraseña:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Contraseña" placeholder="Contraseña">
       </div>
 
-      <label class="col-sm-1  col-form-label">Salario:</label>
+
+
+      <label class="col-sm  col-form-label">Salario:</label>
       <div class="col-sm col-md-12">
       <input type="number" class="form-control" formControlName="Salario" placeholder="$$$$">
       </div>
 
+
+
   </div>
+
+
 
   <div class="form-group row">
     <label class="col-sm-1 col-form-label">Turno:</label>
@@ -40,6 +53,8 @@
         </select>
       </div>
 
+
+
       <label class="col-sm-1 col-form-label">Rol:</label>
       <div class="col-sm col-md-4">
         <select class="form-control" formControlName="Rol" placeholder="Rol">
@@ -49,9 +64,14 @@
       </div>
      </div>
 
+
+
      <div class="form-group row">
       <button type="submit" class="btn btn-outline-primary">Crear</button>
      </div>
+     
   </form>
+
+
 
 </div>

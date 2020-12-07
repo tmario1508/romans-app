@@ -11,7 +11,7 @@
 
     <div class="row">
       <div class=" col-sm col-md-12 col-lg-12 col-xl-12 pedido-row table-dark">
-        <h5 class="subtitulo">Total: ${{this.total}} MXN</h5>
+        <h5 class="subtitulo">Total: ${{this.total}} mxn</h5>
       </div>
     </div>
 
@@ -45,14 +45,14 @@
         <hr class="hr-blanco">
       </ul>
       <div class="row short">
-        <div class=" col-sm  compra-row table-dark">
-          <h4>Realizar Pedido</h4>
-        </div>
+        <div class=" col-sm col-md-12 col-lg-12 col-xl-12">
+        <a class="col-sm btn btn-secondary w-100 mb-2 table-dark option">Realizar Pedido</a>
+      </div>
       </div>
 
       <div class="row short">
-        <div class=" col-sm col-md-12 col-lg-12 col-xl-12 compra-row table-dark">
-          <h4 (click)="onEliminarCarrito()">Eliminar Pedido</h4>
+        <div class=" col-sm col-md-12 col-lg-12 col-xl-12">
+          <a (click)="onEliminarCarrito()" class="col-sm btn btn-secondary w-100 mb-2 table-dark option">Cancelar Pedido</a>
         </div>
       </div>
     </div>
@@ -60,3 +60,4 @@
   </div>
 </div>
 
+<div class="separador"></div>

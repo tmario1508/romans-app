@@ -2,11 +2,15 @@
 <div class="container">
   <form [formGroup]="UpEmpleadoForm" (ngSubmit)="onUpdateEmpleado()" class="list-group-item">
 
+
+
     <div class="form-group row">
       <label class="col-sm-1  col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
         <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
       </div>
+
+
 
       <label class="col-sm-1  col-form-label">Apellido:</label>
       <div class="col-sm col-md-12">
@@ -14,16 +18,22 @@
       </div>
 
 
+
+
       <label class="col-sm-1  col-form-label">Email:</label>
       <div class="col-sm col-md-12">
         <input type="email" class="form-control" formControlName="Email" placeholder="email@email.com">
       </div>
+
+
 
       <label class="col-sm-1  col-form-label">Salario:</label>
       <div class="col-sm col-md-12">
         <input type="number" class="form-control" formControlName="Salario" placeholder="$$$$">
       </div>
     </div>
+
+
 
     <div class="form-group row">
         <label class="col-sm-1  col-form-label">Rol:</label>
@@ -34,6 +44,8 @@
           </select>
         </div>
 
+
+
         <label class="col-sm-1 col-form-label">Turno:</label>
         <div class="col-sm col-md-5">
           <select class="form-control" formControlName="Turno" placeholder="Turno">
@@ -43,9 +55,14 @@
         </div>
     </div>
 
+
+
       <div class="form-group row">
         <button type="submit" class="btn btn-outline-primary">Actualizar</button>
       </div>
 
+
+
   </form>
 </div>
+ 

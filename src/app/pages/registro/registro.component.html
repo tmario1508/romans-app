@@ -1,47 +1,50 @@
-<h1 class="titulo">Crea tu perfil</h1>
 <div class="container">
-  <form [formGroup]="RusuarioForm" (ngSubmit)="onRegistroUsuario()"  class="list-group-item">
+<h1 class="titulo">Bienvenido! crea tu perfil</h1>
+  <form [formGroup]="RusuarioForm" (ngSubmit)="onRegistroUsuario()" >
     <div class="form-group row">
 
-      <label class="col-sm-1  col-form-label">Nombre:</label>
+      <label class="col-sm  col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
+      <input type="text" class="form-control text-center" formControlName="Nombre" placeholder="Nombre">
       </div>
 
-      <label class="col-sm-1  col-form-label">Aepllido:</label>
+      <label class="col-sm  col-form-label mt-2">Apellidos:</label>
       <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Apellido" placeholder="Apellido">
+      <input type="text" class="form-control text-center" formControlName="Apellido" placeholder="Apellido">
       </div>
 
-      <label class="col-sm-1  col-form-label">Email:</label>
+      <label class="col-sm  col-form-label mt-2">Email:</label>
       <div class="col-sm col-md-12">
-      <input type="email" class="form-control" formControlName="Email" placeholder="email@email.com">
+      <input type="email" class="form-control text-center" formControlName="Email" placeholder="email@email.com">
       </div>
 
 
-      <label class="col-sm-1  col-form-label">Contraseña:</label>
+      <label class="col-sm  col-form-label mt-2">Contraseña:</label>
       <div class="col-sm col-md-12">
-      <input type="password" class="form-control" formControlName="Contraseña" placeholder="Contraseña">
+      <input type="password" class="form-control text-center" formControlName="Contraseña" placeholder="Contraseña">
       </div>
 
-      <label class="col-sm-4  col-form-label">Confirma la contraseña:</label>
+      <label class="col-sm  col-form-label mt-2">Confirma la contraseña:</label>
       <div class="col-sm col-md-12">
-      <input type="password" class="form-control" formControlName="ConfContraseña" placeholder="Contraseña">
+      <input type="password" class="form-control text-center" formControlName="ConfContraseña" placeholder="Contraseña">
       </div>
 
-      <label class="col-sm-1  col-form-label">Dirección:</label>
+      <label class="col-sm  col-form-label mt-2">Dirección:</label>
       <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Direccion" placeholder="Direccion">
+      <input type="text" class="form-control text-center" formControlName="Direccion" placeholder="Direccion">
       </div>
 
-      <label class="col-sm-1  col-form-label">Tarjeta:</label>
+      <label class="col-sm  col-form-label mt-2">Tarjeta:</label>
       <div class="col-sm col-md-12">
-      <input type="text" class="form-control" formControlName="Tarjeta" placeholder="Tarjeta">
+      <input type="text" class="form-control text-center" formControlName="Tarjeta" placeholder="Tarjeta">
       </div>
   </div>
 
-     <div class="form-group row">
-      <button type="submit" class="btn btn-outline-primary">Crear</button>
+     <div class="form-group pt-2">
+      <button type="submit" class="mb-3 btn-ro btn-lg btn-primary-ro btn-block btn-outline-success-ro" type="submit">Registrar</button>
      </div>
 
+
+
+  </form>
 </div>

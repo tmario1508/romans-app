@@ -2,7 +2,8 @@
 /* CSS Document */
 
 h1,thead{
-	font-family: 'Romanesco', cursive;
+  font-family: 'Romanesco', cursive;
+  text-align: center;
 }
 
 .bg-dark {
@@ -10,7 +11,8 @@ h1,thead{
 }
 
 .titulo {
-  margin: 2rem 2rem 0rem;
+  margin-bottom: 20px;
+  padding-top: 10px;
   color: #000000;
   font-size: 50px;
 
@@ -20,28 +22,42 @@ h1,thead{
 	font-size: 30px;
 }
 
-.tituloproducto {
-  margin: 2rem 8rem 1rem;
-  color: #000000;
 
-}
+
 
 .margenesS{
 	margin: 2rem 8rem;
 }
 
-.producto{
-	margin: 4rem 6rem;
-
-}
 
 .container{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20vh;
+  text-align: center;
 }
 
 
 .bg-romanisProd{
 	background-color: #FAA402;
 }
+
+
+@media (min-width: 768px) {
+.form-group{
+  align-self: center;
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+ }
+
+ .btn-primary-ro{
+  margin-left: 2%;
+  margin-right: 2%;
+ }
+
+
+  }
+
+
 

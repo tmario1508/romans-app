@@ -6,7 +6,7 @@ body,html{
 .titulo{
 	font-family: 'Romanesco', cursive;
   color: black;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .encabezado{
@@ -20,6 +20,10 @@ body,html{
   border-color: black;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.ultimos-productos{
+  margin-bottom: 10vh;
 }
 
 @media (min-width: 768px) {

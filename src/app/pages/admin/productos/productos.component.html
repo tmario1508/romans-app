@@ -1,11 +1,12 @@
 
-<div class="contenedor container-fluid">
-
-	<h1 class="titulo">Lista de productos</h1>
-	<button type="button" class="btn btn-outline-primary col-md-1 offset-md-10 mb-2" [routerLink] ="['/admin/registro-producto']">Crear</button>
-
+<div class=" container-fluid">
+  <h1 class="titulo">Lista de productos</h1>
+  <div class="contenedor">
+  <div class="container-fluid">
+  <button class="col-sm col-md-2 mb-3 boton  btn-lg btn-primary-ro" [routerLink] ="['/admin/registro-producto']">Agregar</button>
+  </div>
 	 <!-- Seccion tabla -->
-	  <section class="container">
+	  <section class="table-responsive">
 		<table class="table table-bordered">
 		  <thead class="encTabla">
 			<tr>
@@ -32,7 +33,6 @@
 
 		  </tbody>
 		</table>
-		  <button type="button" class="btn btn-outline-primary" [routerLink] ="['/admin/registro-producto']">Crear</button>
 	</section>
 	  <!-- seccion tabla -->
 
@@ -56,4 +56,6 @@
   </nav>
       </div>
 </section>
+</div>
     <!-- paginacion -->
+</div>

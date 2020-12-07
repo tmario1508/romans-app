@@ -106,6 +106,14 @@
   width: 30%;
 }
 
+.separador {
+  height: 10vh;
+}
+
+.option{
+  font-size: 24px;
+}
+
 /*Resolucion de laptop*/
 @media (min-width: 768px) {
   .nota{

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import Swal from 'sweetalert2';
+import { environment } from 'src/environments/environment';
 
-
-const URL_BASE:string = "http://localhost:3000/usuarios";
+const URL_BASE:string = environment.API.EndPoint.Node+"usuarios";
 
 @Injectable({
   providedIn: 'root'
@@ -36,7 +36,8 @@ public AddUsuario = (nombre,apellido,email,contraseña,direccion,tarjeta) =>{
     email:email,
     password:contraseña,
     direccion: direccion,
-    tarjeta: tarjeta
+    tarjeta: tarjeta,
+    saldo:900
   }
   console.log('body:'+JSON.stringify(bodyRequest));
 

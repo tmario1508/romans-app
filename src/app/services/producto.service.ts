@@ -1,10 +1,10 @@
-
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { map } from 'rxjs/operators';
 import { observable, Observable } from 'rxjs';
 import Swal from 'sweetalert2';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class ProductoService {
 
   constructor(private http:HttpClient) { }
 
-  URL_BASE:string = "https://localhost:44308/api/producto";
+  URL_BASE:string = environment.API.EndPoint.Azure;
   InfoProductoId;
   ultimosproductos:any ={};
   ultimosproductosf:any ={};

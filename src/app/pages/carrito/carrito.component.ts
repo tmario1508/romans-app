@@ -24,9 +24,31 @@ export class CarritoComponent implements OnInit {
   }
 
   onEliminarCarrito(){
-    this._carritoService.BorrarCarrito();
-    this.listaCarrito = this._carritoService.getCarrito();
-    this.total = this._carritoService.CalcularTotal();
+    Swal.fire({
+      title: '¿Estas seguro?',
+      text: "Eliminarás todos los productos de tu pedido y tendrás que volver a agregarlos",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, quitar productos',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: '',
+          text: "Orden cancelada con exito",
+          icon: 'success',
+          confirmButtonText: 'Aceptar',
+        })
+        this._carritoService.BorrarCarrito();
+        this.listaCarrito = this._carritoService.getCarrito();
+        this.total = this._carritoService.CalcularTotal();
+      }else{
+        this.listaCarrito = this._carritoService.getCarrito();
+        this.total = this._carritoService.CalcularTotal();
+      }
+    })
   }
 
   EliminarItem(producto){
