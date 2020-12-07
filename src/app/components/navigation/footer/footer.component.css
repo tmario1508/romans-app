@@ -21,6 +21,10 @@ section .section-title {
 }
 #footer {
     background: #000000 !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 #footer h5{
 	padding-left: 10px;

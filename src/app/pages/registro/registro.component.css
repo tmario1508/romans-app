@@ -11,7 +11,7 @@ h1,thead{
 
 .titulo {
   margin: 2rem 2rem 0rem;
-  color: #FAA402;
+  color: #000000;
   font-size: 50px;
 
 }
@@ -22,7 +22,7 @@ h1,thead{
 
 .tituloproducto {
   margin: 2rem 8rem 1rem;
-  color: #FAA402;
+  color: #000000;
 
 }
 
@@ -42,6 +42,6 @@ h1,thead{
 
 
 .bg-romanisProd{
-	background-color: #D6DDDF;
+	background-color: #FAA402;
 }
 

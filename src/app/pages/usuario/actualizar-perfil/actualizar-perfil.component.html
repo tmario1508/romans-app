@@ -1,12 +1,17 @@
 <h1 class="titulo">Actualiza tu perfil</h1>
 <div class="container">
   <!--<form [formGroup]="UproductoForm" (ngSubmit)="onUpdateProducto()"  class="list-group-item">-->
-    <form class="list-group-item">
+
     <div class="form-group row">
 
       <label class="col-sm-1  col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
+      </div>
+
+      <label class="col-sm-1  col-form-label">Apellidos:</label>
+      <div class="col-sm col-md-12">
+      <input type="text" class="form-control" formControlName="Apellidos" placeholder="Apellidos">
       </div>
 
       <label class="col-sm-1  col-form-label">Imagen:</label>
@@ -47,6 +52,5 @@
      <div class="form-group row">
       <button type="submit" class="btn btn-outline-primary">Actualizar</button>
      </div>
-  </form>
 
 </div>

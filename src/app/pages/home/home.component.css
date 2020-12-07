@@ -3,6 +3,12 @@ body,html{
 
 }
 
+.titulo{
+	font-family: 'Romanesco', cursive;
+  color: black;
+  font-size: 80px;
+}
+
 .encabezado{
   padding-top: 15px;
   padding-bottom: 15px;
