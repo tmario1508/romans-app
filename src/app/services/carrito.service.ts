@@ -69,8 +69,6 @@ export class CarritoService {
     localStorage.setItem('carrito', JSON.stringify(listCart));
   }
 
-  /*GENERAR PEDIDO REGISTRO EN MONGODB*/
-
   /*OBTENER CARRITO ACTUAL*/
   getCarrito(){
 		let carritoStorage = JSON.parse(localStorage.getItem('carrito'));

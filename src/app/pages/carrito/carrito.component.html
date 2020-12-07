@@ -17,6 +17,9 @@
 
     <hr class="hr-blanco">
 
+    <div class="text-center mb-5 mt-5" *ngIf="listaCarrito==null || !listaCarrito">
+      <p class="font-weight-bold">Aún no hay productos en su orden</p>
+    </div>
 
     <div class="row producto-row">
       <ul class="col-sm col-md-12 col-lg-12 col-xl-12  mb-1 mt-1" *ngFor="let item of listaCarrito">
@@ -46,7 +49,7 @@
       </ul>
       <div class="row short">
         <div class=" col-sm col-md-12 col-lg-12 col-xl-12">
-        <a class="col-sm btn btn-secondary w-100 mb-2 table-dark option">Realizar Pedido</a>
+        <a (click)="onPedido()" class="col-sm btn btn-secondary w-100 mb-2 table-dark option">Realizar Pedido</a>
       </div>
       </div>
 

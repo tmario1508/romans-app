@@ -8,7 +8,7 @@ export const environment = {
     EndPoint: {
       Local: 'https://localhost:44308/api/producto',
       Azure:'https://romanis-api.azurewebsites.net/api/producto',
-      Node:'http://localhost:3000/auth'
+      Node:'http://localhost:3000/'
     }
   }
 };

@@ -68,6 +68,18 @@ public AddUsuario = (nombre,apellido,email,contraseña,direccion,tarjeta) =>{
 
   }
 
+  /*OBTENER USUARIO ACTUAL*/
+  getUserInfo(){
+    let userStorage = JSON.parse(localStorage.getItem('userInf'));
+    let userLocal;
+		if(userStorage != "undefined"){
+			userLocal = userStorage;
+		}else{
+			userLocal= null;
+    }
+    return userLocal;
+  }
+
 
   /*GET Usuario POR ID*/
   public GetUsuarioById = (id)=>{
