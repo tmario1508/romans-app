@@ -31,15 +31,9 @@ export class AuthService {
   }).subscribe(res =>{
     console.log(res);
     const newToken = (<any>res).token;
-    const _id = (<any>res)._id;
-    const nombre = (<any>res).nombre;
-    const apellido = (<any>res).apellido;
-    const rol = (<any>res).rol;
+    const userInf = (<any>res).info;
     localStorage.setItem("jwt", newToken);
-    localStorage.setItem("_id", JSON.stringify(_id));
-    localStorage.setItem("nombre", JSON.stringify(nombre));
-    localStorage.setItem("apellido", JSON.stringify(apellido));
-    localStorage.setItem("rol", JSON.stringify(rol));
+    localStorage.setItem("userInf", JSON.stringify(userInf));
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -68,15 +62,9 @@ export class AuthService {
   }).subscribe(res =>{
     console.log(res);
     const newToken = (<any>res).token;
-    const _id = (<any>res)._id;
-    const nombre = (<any>res).nombre;
-    const apellido = (<any>res).apellido;
-    const rol = (<any>res).rol;
+    const userInf = (<any>res).info;
     localStorage.setItem("jwt", newToken);
-    localStorage.setItem("_id", JSON.stringify(_id));
-    localStorage.setItem("nombre", JSON.stringify(nombre));
-    localStorage.setItem("apellido", JSON.stringify(apellido));
-    localStorage.setItem("rol", JSON.stringify(rol));
+    localStorage.setItem("userInf", JSON.stringify(userInf));
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -98,5 +86,9 @@ export class AuthService {
   }
 
   /*LOG OUT*/
+  public LogOut(){
+    localStorage.removeItem('userInf');
+    localStorage.removeItem('jwt');
+  }
 
 }

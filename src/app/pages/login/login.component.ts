@@ -36,10 +36,9 @@ export class LoginComponent implements OnInit {
         })
       }else{
         this._AuthController.UserLogin(Email,Contraseña);
-        this.routernav.navigate(["/perfil"]);
+        this.routernav.navigate(["/home"]);
       }
     }catch{
-
     }
 
   }
