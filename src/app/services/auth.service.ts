@@ -16,7 +16,7 @@ export class AuthService {
 
   /*LOGIN*/
 
-  //Insert Empleado
+  //User Login
   public UserLogin = (email,contraseña) =>{
   let bodyRequest ={
     email:email,
@@ -31,9 +31,15 @@ export class AuthService {
   }).subscribe(res =>{
     console.log(res);
     const newToken = (<any>res).token;
-    const userInf = (<any>res).info;
+    const _id = (<any>res)._id;
+    const nombre = (<any>res).nombre;
+    const apellido = (<any>res).apellido;
+    const rol = (<any>res).rol;
     localStorage.setItem("jwt", newToken);
-    localStorage.setItem("userInf", JSON.stringify(userInf));
+    localStorage.setItem("_id", JSON.stringify(_id));
+    localStorage.setItem("nombre", JSON.stringify(nombre));
+    localStorage.setItem("apellido", JSON.stringify(apellido));
+    localStorage.setItem("rol", JSON.stringify(rol));
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -42,14 +48,7 @@ export class AuthService {
       timer: 1500
     })
   },err =>{
-    console.log(err);
-    Swal.fire({
-      position: 'center',
-      icon: 'warning',
-      title: 'ERROR: No se pudo iniciar sesión, intentelo nuevamente',
-      showConfirmButton: false,
-      timer: 1500
-    })
+    this.UserLoginEmpleado(email,contraseña);
   });
 
   }
@@ -69,9 +68,15 @@ export class AuthService {
   }).subscribe(res =>{
     console.log(res);
     const newToken = (<any>res).token;
-    const userInf = (<any>res).info;
+    const _id = (<any>res)._id;
+    const nombre = (<any>res).nombre;
+    const apellido = (<any>res).apellido;
+    const rol = (<any>res).rol;
     localStorage.setItem("jwt", newToken);
-    localStorage.setItem("userInf", JSON.stringify(userInf));
+    localStorage.setItem("_id", JSON.stringify(_id));
+    localStorage.setItem("nombre", JSON.stringify(nombre));
+    localStorage.setItem("apellido", JSON.stringify(apellido));
+    localStorage.setItem("rol", JSON.stringify(rol));
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -84,7 +89,7 @@ export class AuthService {
     Swal.fire({
       position: 'center',
       icon: 'warning',
-      title: 'ERROR: No se pudo iniciar sesión, intentelo nuevamente',
+      title: 'ERROR: No se pudo iniciar sesión , intentelo nuevamente',
       showConfirmButton: false,
       timer: 1500
     })

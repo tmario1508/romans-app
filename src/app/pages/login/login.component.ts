@@ -35,14 +35,8 @@ export class LoginComponent implements OnInit {
           timer: 1500
         })
       }else{
-        try{
         this._AuthController.UserLogin(Email,Contraseña);
         this.routernav.navigate(["/perfil"]);
-      }catch{
-        //EMPLEADO
-        this._AuthController.UserLoginEmpleado(Email,Contraseña);
-        this.routernav.navigate(["/perfil"]);
-      }
       }
     }catch{
 
