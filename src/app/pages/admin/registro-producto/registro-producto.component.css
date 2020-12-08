@@ -23,7 +23,6 @@ h1,thead{
 .tituloproducto {
   margin: 2rem 8rem 1rem;
   color: black;
-
 }
 
 .margenesS{
@@ -37,7 +36,7 @@ h1,thead{
 
 .container{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20vh;
 }
 
 

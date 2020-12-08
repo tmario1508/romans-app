@@ -1,37 +1,28 @@
-<h1 class="titulo">Crear empleado</h1>
 <div class="container">
-  <form [formGroup]="RempleadoForm" (ngSubmit)="onRegistroEmpleado()" class="list-group-item">
+<h1 class="titulo">Crear empleado</h1>
+
+<form [formGroup]="RempleadoForm" (ngSubmit)="onRegistroEmpleado()" class="list-group-item">
     <div class="form-group row">
-
-
 
       <label class="col-sm  col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre">
       </div>
 
-
       <label class="col-sm  col-form-label">Apellidos:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Apellido" placeholder="Apellido">
       </div>
-
-
 
       <label class="col-sm-1  col-form-label">Email:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Email" placeholder="email@email.com">
       </div>
 
-
-
-
-      <label class="col-sm  col-form-label">Contraseña:</label>
+      <label class="col-sm col-md  col-form-label">Contraseña:</label>
       <div class="col-sm col-md-12">
       <input type="text" class="form-control" formControlName="Contraseña" placeholder="Contraseña">
       </div>
-
-
 
       <label class="col-sm  col-form-label">Salario:</label>
       <div class="col-sm col-md-12">
@@ -64,14 +55,9 @@
       </div>
      </div>
 
-
-
-     <div class="form-group row">
-      <button type="submit" class="btn btn-outline-primary">Crear</button>
+     <div class="form-group pt-2">
+      <button type="submit" class="mb-3 btn-ro btn-lg btn-primary-ro btn-block" type="submit">Crear</button>
      </div>
-     
   </form>
-
-
 
 </div>

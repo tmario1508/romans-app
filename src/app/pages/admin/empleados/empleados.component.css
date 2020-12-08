@@ -1,7 +1,9 @@
 .titulo {
-  margin: 2rem 2rem 0rem;
-  color: #FAA402;
+  color: black;
   font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: 'Romanesco', cursive;
 }
 
@@ -9,8 +11,11 @@
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20vh;
+}
+
+.boton{
+  float: right;
 }
 
 h1,thead{
@@ -23,13 +28,6 @@ tbody{
 
 .bg-dark {
   background-color: #AD1300 !important;
-}
-
-.titulo {
-  margin: 2rem 2rem 0rem;
-  color: #FAA402;
-  font-size: 50px;
-
 }
 
 .encTabla{
@@ -72,3 +70,9 @@ tbody{
   border: 2px solid #8592FD;
   border-bottom-width: 2px solid #8592FD;
 }
+
+@media (min-width: 768px) {
+  .boton{
+    margin-right: 9rem;
+  }
+  }
