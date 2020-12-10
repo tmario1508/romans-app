@@ -125,11 +125,19 @@ export class CarritoComponent implements OnInit {
       }).queue([
         {
           title: 'Total de la orden',
-          text: '$'+this.total+' MXN'
+          text: '$'+this.total+' MXN',
+          inputValidator: (result) => {
+            console.log(result);
+            this.comentarios = result;
+            if(result || result == ""){
+
+            }
+            return !result && ''
+          }
         },
         {
           input: 'textarea',
-          title:'Comentarios',
+          title:'Comentarios:',
           inputPlaceholder: 'Escribenos... (especificaciones, modelos, dudas, instrucciones, etc)',
           inputValidator: (result) => {
             console.log(result);
@@ -141,33 +149,52 @@ export class CarritoComponent implements OnInit {
           }
         },
         {
-          title: 'Domicilio',
-          text: user.direccion
+          title: 'Domicilio de entrega:',
+          text: user.direccion,
+          inputValidator: (result) => {
+            console.log(result);
+            this.comentarios = result;
+            if(result || result == ""){
+
+            }
+            return !result && ''
+          }
         },
         {
-          title: 'Cargo a la tarjeta',
-          text: user.tarjeta
+          title: 'Cargo a la tarjeta:',
+          text: user.tarjeta,
+          inputValidator: (result) => {
+            console.log(result);
+            this.comentarios = result;
+            if(result || result == ""){
+
+            }
+            return !result && ''
+          }
         },
         {
           title:'Terminos y condiciones',
           input: 'checkbox',
           inputPlaceholder:'Acepto los terminos y condiciones',
           inputValidator: (result) => {
-            return !result && 'Necesitas aceptar los terminos para realizar el pedido'
+
+            if (result) {
+              const answers = JSON.stringify(result)
+              try{
+                this._pedidoService.generarPedido(user,orden,this.total,this.comentarios);
+                this._carritoService.BorrarCarrito();
+                this.listaCarrito = this._carritoService.getCarrito();
+                this.total = this._carritoService.CalcularTotal();
+              }catch{
+
+              }
+            }else{
+              return !result && 'Necesitas aceptar los terminos para realizar el pedido'
+            }
           }
         },
       ]).then((result) => {
-        if (result) {
-          const answers = JSON.stringify(result)
-          try{
-            this._pedidoService.generarPedido(user,orden,this.total,this.comentarios);
-            this._carritoService.BorrarCarrito();
-            this.listaCarrito = this._carritoService.getCarrito();
-            this.total = this._carritoService.CalcularTotal();
-          }catch{
 
-          }
-        }
       })
     }
   }
