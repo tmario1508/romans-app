@@ -1,42 +1,32 @@
-<h1 class="titulo text-dark" >Actualizar empleado</h1>
-<div class="container">
+
+<div class="container contenido">
+  <h1 class="titulo" >Actualizar empleado</h1>
   <form [formGroup]="UpEmpleadoForm" (ngSubmit)="onUpdateEmpleado()" class="list-group-item">
 
-
-
     <div class="form-group row">
-      <label class="col-sm-1  col-form-label">Nombre:</label>
+      <label class="col-sm-1 text-center col-form-label">Nombre:</label>
       <div class="col-sm col-md-12">
         <input type="text" class="form-control" formControlName="Nombre" placeholder="Nombre" readonly >
       </div>
 
-
-
-      <label class="col-sm-1  col-form-label">Apellido:</label>
+      <label class="col-sm-1 text-center col-form-label">Apellido:</label>
       <div class="col-sm col-md-12">
         <input type="text" class="form-control" formControlName="Apellido" placeholder="Apellido" readonly >
       </div>
 
-
-
-
-      <label class="col-sm-1  col-form-label">Email:</label>
+      <label class="col-sm-1 text-center col-form-label">Email:</label>
       <div class="col-sm col-md-12">
         <input type="email" class="form-control" formControlName="Email" placeholder="email@email.com" readonly >
       </div>
 
-
-
-      <label class="col-sm-1  col-form-label">Salario:</label>
+      <label class="col-sm-1 text-center col-form-label">Salario:</label>
       <div class="col-sm col-md-12">
         <input type="number" class="form-control" formControlName="Salario" placeholder="$$$$">
       </div>
     </div>
 
-
-
     <div class="form-group row">
-        <label class="col-sm-1  col-form-label">Rol:</label>
+        <label class="col-sm-1 text-center col-form-label">Rol:</label>
         <div class="col-sm col-md-5">
           <select class="form-control" formControlName="Rol" placeholder="Rol">
             <option value="Administrador">Administrador</option>
@@ -44,9 +34,7 @@
           </select>
         </div>
 
-
-
-        <label class="col-sm-1 col-form-label">Turno:</label>
+        <label class="col-sm-1 text-center col-form-label">Turno:</label>
         <div class="col-sm col-md-5">
           <select class="form-control" formControlName="Turno" placeholder="Turno">
             <option value="Matutino">Matutino</option>
@@ -55,13 +43,9 @@
         </div>
     </div>
 
-
-
-      <div class="form-group row">
-        <button type="submit" class="btn btn-outline-primary">Actualizar</button>
-      </div>
-
-
+      <div class="form-group pt-2">
+        <button type="submit" class="mb-3 btn-ro btn-lg btn-primary-ro btn-block" type="submit">Actualizar</button>
+       </div>
 
   </form>
 </div>

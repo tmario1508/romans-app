@@ -1,7 +1,6 @@
-	<!-- Detalle de usuario-->
+  <div class="container contenido">
+    	<!-- Detalle de usuario-->
 	<h1 class="titulo">Tu perfil</h1>
-
-  <div class="container">
 	<h2 class="tituloproducto">{{infoUser.nombre}}</h2>
 	<div class="container">
 	  <div class="row">
@@ -19,13 +18,15 @@
 		</div>
 	  </div>
   </div>
-  </div>
-	<!-- detalle de producto-->
-
-	<!-- Botones-->
-	<section class="margenesS">
+<!-- Botones-->
+<div class="pt-4 text-center">
+  <section>
     <button type="button" class="btn btn-outline-success"  [routerLink] ="['/actualizar-perfil', infoUser._id]">Editar</button>
     <button type="button" class="btn btn-outline-danger"(click)="onDeleteUsuario(infoUser._id)" >Borrar perfil</button>
-		<button type="button" class="btn btn-outline-secondary">Regresar</button>
-	</section>
-	<!-- Botones-->
+    <button type="button" class="btn btn-outline-secondary">Regresar</button>
+  </section>
+</div>
+  <!-- Botones-->
+  </div>
+
+

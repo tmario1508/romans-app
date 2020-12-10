@@ -1,19 +1,22 @@
-@charset "utf-8";
-/* CSS Document */
 
 h1,thead{
 	font-family: 'Romanesco', cursive;
 }
 
-.bg-dark {
-  background-color: #AD1300 !important;
+.titulo {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.titulo {
-  margin: 2rem 2rem 0rem;
-  color: #000000;
-  font-size: 50px;
+.contenido{
+  margin-top: 20px;
+  margin-bottom: 20vh;
+}
 
+.bg-dark {
+  background-color: #AD1300 !important;
 }
 
 .encTabla{
@@ -33,11 +36,6 @@ h1,thead{
 .producto{
 	margin: 4rem 6rem;
 
-}
-
-.container{
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 

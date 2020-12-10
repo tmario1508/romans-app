@@ -1,0 +1,15 @@
+h1,thead{
+	font-family: 'Romanesco', cursive;
+}
+
+.titulo {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenido{
+  margin-top: 20px;
+  margin-bottom: 20vh;
+}
