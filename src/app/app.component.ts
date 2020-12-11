@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TopBarMenuService } from '../app/services/top-bar-menu.service';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,31 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'Romanis-FrontEnd';
-  rol_usuario = 'USER';
-  rol_admin = 'ADMIN';
+  roles = 'ADMIN, EMPLEADO, USUARIO';
+  menuItems:any[] = [];
+  rolJson;
 
-  constructor(){
+  constructor(private MenuService:TopBarMenuService){
+    this.getData();
+  }
+
+getData(){
+    this.MenuService.getItemsTopBar().subscribe((data:any)=>{
+      this.menuItems = data;
+      console.log("Numero de items: " +this.menuItems.length);
+    });
+    let userStorage = JSON.parse(localStorage.getItem('userInf'));
+    if(userStorage){
+      this.rolJson = userStorage.rol;
+      console.log("Rol desde el componente padre: " + this.rolJson);
+    }
+
 
   }
 
+  childTopBarMenu(event){
+    console.log(event);
+  }
 
 }
 

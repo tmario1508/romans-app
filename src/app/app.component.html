@@ -2,7 +2,11 @@
   <!-- Main Content -->
   <div id="page-content">
     <!-- Topbar -->
-    <app-topbar></app-topbar>
+    <app-topbar
+    [menuItems] = "menuItems"
+    (onClickMenu)="childTopBarMenu($event)"
+    [rolJson] = "rolJson">
+    </app-topbar>
     <!-- /topbar -->
 
     <!-- Begin Content -->

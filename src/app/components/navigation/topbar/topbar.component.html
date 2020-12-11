@@ -26,9 +26,27 @@
                 <li class="nav-item">
                   <a class="nav-link" [routerLink] ="['/conocenos']"><span class="icon-conocenos"></span> Conócenos</a>
                 </li>
-                <li class="nav-item">
+                <li *ngIf="!usuario" class="nav-item">
                     <a class="nav-link" [routerLink] ="['/login']"><span class="icon-login"></span> Iniciar Sesión</a>
                 </li>
+
+
+                <li class="nav-item dropdown"  >
+                <div *ngFor="let item of menuItems; let i = index" >
+                <a *ngIf="item.section == rol && usuario" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon-menu"></span> {{rol}}
+                </a>
+                <div  class="dropdown-menu dropdown-menu-ro" aria-labelledby="navbarDropdown"  *ngIf="item.items.length > 0 && rol">
+                  <div *ngIf="item.items.length > 0 && item.section == rol && usuario">
+                    <div *ngFor="let subitem of item.items">
+                      <a *ngFor="let child of subitem.subItems" class="dropdown-item" [routerLink] ="child.route" routerLinkActive="active" >{{child.title}}</a>
+                    </div>
+                    <a class="dropdown-item" (click)="onLogout()"> Cerrar Sesión</a>
+                </div>
+                </div>
+              </div>
+              </li>
+
             </ul>
         </div>
 

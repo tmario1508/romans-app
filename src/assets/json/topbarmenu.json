@@ -1,0 +1,70 @@
+[
+  {
+      "section": "ADMIN",
+      "items": [
+        {
+          "subItems": [
+            {
+              "title": "Perfil",
+              "icon": "",
+              "route": ["/perfil"]
+            },
+            {
+                "title": "Empleados",
+                "icon": "",
+                "route": ["admin/empleados"]
+            },
+            {
+                "title": "Pedidos",
+                "icon": "",
+                "route": ["pedidos"]
+            },
+            {
+              "title": "Productos",
+              "icon": "",
+              "route": ["admin/productos"]
+          }
+        ]
+        }
+      ]
+  },
+  {
+    "section": "EMPLEADO",
+    "items": [
+      {
+        "subItems": [
+          {
+            "title": "Perfil",
+            "icon": "",
+            "route": ["/perfil"]
+          },
+          {
+              "title": "Pedidos",
+              "icon": "",
+              "route": ["/pedidos"]
+          }
+      ]
+      }
+    ]
+},
+{
+  "section": "USUARIO",
+  "items": [
+    {
+      "subItems": [
+        {
+            "title": "Perfil",
+            "icon": "",
+            "route": ["/perfil"]
+        },
+        {
+          "title": "Pedidos",
+          "icon": "",
+          "route": ["/pedidos"]
+        }
+    ]
+    }
+  ]
+}
+
+]
