@@ -10,7 +10,7 @@
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
+    padding: 10px 0;
 }
 
 section .section-title {
@@ -76,6 +76,11 @@ section .section-title {
 }
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
+}
+
+.icon{
+  height: 20px;
+  width: auto;
 }
 
 @media (max-width:767px){
