@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?sga0i2');
-  src:  url('../fonts/icomoon.eot?sga0i2#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?sga0i2') format('truetype'),
-    url('../fonts/icomoon.woff?sga0i2') format('woff'),
-    url('../fonts/icomoon.svg?sga0i2#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?m5ln10');
+  src:  url('../fonts/icomoon.eot?m5ln10#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?m5ln10') format('truetype'),
+    url('../fonts/icomoon.woff?m5ln10') format('woff'),
+    url('../fonts/icomoon.svg?m5ln10#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,101 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-carrito .path1:before {
+.icon-carrito:before {
   content: "\e900";
-  color: rgb(159, 9, 35);
+  color: #AD1300;
 }
-.icon-carrito .path2:before {
+.icon-conocenos:before {
   content: "\e901";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path3:before {
-  content: "\e902";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-  opacity: 0.26;
-}
-.icon-carrito .path4:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path5:before {
-  content: "\e904";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path6:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path7:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path8:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path9:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path10:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path11:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path12:before {
-  content: "\e90b";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-.icon-carrito .path13:before {
-  content: "\e90c";
-  margin-left: -1em;
-  color: rgb(159, 9, 35);
-}
-
-.icon-carrito:before{
-  content: "\e90d";
-  color: #9f0923;
+  color: #AD1300;
 }
 .icon-home:before {
-  content: "\e90d";
+  content: "\e902";
+  color: #AD1300;
+}
+.icon-login:before {
+  content: "\e903";
   color: #AD1300;
 }
 .icon-menu:before {
-  content: "\e90e";
+  content: "\e904";
   color: #AD1300;
 }
 .icon-usuario:before {
-  content: "\e90f";
+  content: "\e905";
   color: #AD1300;
 }
 .icon-mail2:before {
   content: "\ea84";
-  color: #D6DDD7
 }
 .icon-facebook:before {
   content: "\ea90";
-  color: #D6DDD7
 }
 .icon-instagram:before {
   content: "\ea92";
-  color: #D6DDD7
 }
 .icon-whatsapp:before {
   content: "\ea93";
-  color: #D6DDD7
 }

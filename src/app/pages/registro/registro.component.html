@@ -1,50 +1,47 @@
 <div class="container">
-<h1 class="titulo">Bienvenido! crea tu perfil</h1>
-  <form [formGroup]="RusuarioForm" (ngSubmit)="onRegistroUsuario()" >
-    <div class="form-group row">
-
-      <label class="col-sm  col-form-label">Nombre:</label>
-      <div class="col-sm col-md-12">
-      <input type="text" class="form-control text-center" formControlName="Nombre" placeholder="Nombre">
-      </div>
-
-      <label class="col-sm  col-form-label mt-2">Apellidos:</label>
-      <div class="col-sm col-md-12">
-      <input type="text" class="form-control text-center" formControlName="Apellido" placeholder="Apellido">
-      </div>
-
-      <label class="col-sm  col-form-label mt-2">Email:</label>
-      <div class="col-sm col-md-12">
-      <input type="email" class="form-control text-center" formControlName="Email" placeholder="email@email.com">
-      </div>
-
-
-      <label class="col-sm  col-form-label mt-2">Contraseña:</label>
-      <div class="col-sm col-md-12">
-      <input type="password" class="form-control text-center" formControlName="Contraseña" placeholder="Contraseña">
-      </div>
-
-      <label class="col-sm  col-form-label mt-2">Confirma la contraseña:</label>
-      <div class="col-sm col-md-12">
-      <input type="password" class="form-control text-center" formControlName="ConfContraseña" placeholder="Contraseña">
-      </div>
-
-      <label class="col-sm  col-form-label mt-2">Dirección:</label>
-      <div class="col-sm col-md-12">
-      <input type="text" class="form-control text-center" formControlName="Direccion" placeholder="Direccion">
-      </div>
-
-      <label class="col-sm  col-form-label mt-2">Tarjeta:</label>
-      <div class="col-sm col-md-12">
-      <input type="text" class="form-control text-center" formControlName="Tarjeta" placeholder="Tarjeta">
-      </div>
+  <h1 class="titulo">Bienvenido! crea tu perfil</h1>
+    <form [formGroup]="RusuarioForm" (ngSubmit)="onRegistroUsuario()" >
+      <div class="form-group row">
+  
+        <label class="col-sm  col-form-label">Nombre:</label>
+        <div class="col-sm col-md-12">
+          <input type="text" class="form-control text-center" formControlName="Nombre" placeholder="Nombre">
+        </div>
+  
+        <label class="col-sm  col-form-label mt-2">Apellidos:</label>
+        <div class="col-sm col-md-12">
+          <input type="text" class="form-control text-center" formControlName="Apellido" placeholder="Apellido">
+        </div>
+  
+        <label class="col-sm  col-form-label mt-2">Email:</label>
+        <div class="col-sm col-md-12">
+          <input type="email" class="form-control text-center" formControlName="Email" placeholder="email@email.com">
+        </div>
+  
+  
+        <label class="col-sm  col-form-label mt-2">Contraseña:</label>
+        <div class="col-sm col-md-12">
+          <input type="password" class="form-control text-center" formControlName="Contraseña" placeholder="Contraseña">
+        </div>
+  
+        <label class="col-sm  col-form-label mt-2">Confirma la contraseña:</label>
+        <div class="col-sm col-md-12">
+          <input type="password" class="form-control text-center" formControlName="ConfContraseña" placeholder="Contraseña">
+        </div>
+  
+        <label class="col-sm  col-form-label mt-2">Dirección:</label>
+        <div class="col-sm col-md-12">
+          <input type="text" class="form-control text-center" formControlName="Direccion" placeholder="Direccion">
+        </div>
+  
+        <label class="col-sm  col-form-label mt-2">Tarjeta:</label>
+        <div class="col-sm col-md-12">
+          <input type="text" class="form-control text-center" formControlName="Tarjeta" placeholder="Tarjeta">
+        </div>
+    </div>
+  
+       <div class="form-group pt-2">
+        <button type="submit" class="mb-3 btn-ro btn-lg btn-primary-ro btn-block btn-outline-success-ro" type="submit">Registrar</button>
+       </div>
+    </form>
   </div>
-
-     <div class="form-group pt-2">
-      <button type="submit" class="mb-3 btn-ro btn-lg btn-primary-ro btn-block btn-outline-success-ro" type="submit">Registrar</button>
-     </div>
-
-
-
-  </form>
-</div>
