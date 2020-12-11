@@ -37,7 +37,8 @@ public AddUsuario = (nombre,apellido,email,contraseña,direccion,tarjeta) =>{
     password:contraseña,
     direccion: direccion,
     tarjeta: tarjeta,
-    saldo:900
+    saldo:900,
+    rol:"USUARIO"
   }
   console.log('body:'+JSON.stringify(bodyRequest));
 
@@ -47,7 +48,7 @@ public AddUsuario = (nombre,apellido,email,contraseña,direccion,tarjeta) =>{
     })
   }).subscribe(res =>{
     console.log(res);
-    localStorage.setItem('userInf', JSON.stringify(res));
+    //localStorage.setItem('userInf', JSON.stringify(res));
     Swal.fire({
       position: 'center',
       icon: 'success',

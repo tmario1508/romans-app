@@ -21,6 +21,7 @@ export class PerfilComponent implements OnInit {
 
   cargaInfo(){
     this.infoUser= JSON.parse(localStorage.getItem('userInf'));
+    console.log(this.infoUser);
   }
 
   onDeleteUsuario(id){
